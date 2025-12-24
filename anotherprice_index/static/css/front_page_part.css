@@ -1,0 +1,256 @@
+@media screen and (max-width: 767px) {
+    #computer {
+        display: none;
+    }
+    #mobile {
+        min-width: 370px;
+        overflow-x: scroll;
+        display: block;
+    }
+}
+
+@media screen and (min-width: 768px) {
+    #computer {
+        min-width: 1250px;
+        overflow-x: scroll;
+        display: block;
+    }
+    #mobile {
+        display: none;
+    }
+}
+
+/*電腦頁面*/
+#computer {
+    width: 100%;
+}
+
+/*頂部廣告*/
+#topAdvertise {
+    max-width: 100%;
+    width: 100%;
+    height: 4rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    background: #122d3e;
+}
+
+/*首頁上方標題*/
+#homePageTitle {
+    max-width: 100%;
+    width: 100%;
+    height: 7.5rem;
+    display: flex;
+    justify-content: center;
+    z-index: 999;
+    background: #ffffff;
+}
+
+/*這是另外的價錢*/
+#ANOTHERPRICE {
+    width: 16rem;
+    float: left;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+
+/*首頁上方工具*/
+#function {
+    float: left;
+    width: 60rem;
+}
+
+/*搜尋欄*/
+#search {
+    width: 31rem;
+    height: 2.5rem;
+    display: flex;
+    flex-wrap: wrap;
+    float: left;
+    border: 3px solid;
+    border-radius: 10px;
+    margin-top: 2rem;
+    margin-left: 0.3rem;
+    border-color: #3d708f;
+    background-color: #3d708f;
+}
+
+/*搜尋欄廣告*/
+#searchAadvertise {
+    width: 12rem;
+    height: 4.3rem;
+    float: left;
+    margin-top: 2rem;
+    margin-left: 1.5rem;
+    overflow: hidden;
+    background: #3d708f;
+}
+
+#memberLogin {
+    float: left;
+    margin-top: 2rem;
+    margin-left: 1.5rem;
+}
+
+
+#shoppingCart {
+    float: right;
+    margin-top: 2.8rem;
+    margin-right: 2.8rem;
+}
+
+#cartDetail {
+    width: 18rem;
+    height: 20rem;
+    margin-top: 6rem;
+    margin-left: 42rem;
+    z-index: 1000;
+    position: absolute;
+    background: #ffffff;
+    box-shadow: 0 3px 5px rgba(0, 0, 0, 0.2);
+    overflow-y: auto;
+    display: none;
+}
+
+#backToTop {
+    cursor: pointer;
+}
+
+#backToTopButton {
+    bottom: 2rem;
+    right: 2rem;
+    display: none;
+    position: fixed;
+}
+
+#categoryColumn {
+    height: 2.5rem;
+    display: flex;
+    justify-content: center;
+    background: #3d708f;
+}
+
+#categoryButton {
+    display: flex;
+    justify-content: center;
+}
+
+#body {
+    margin: 0 auto;
+    margin-top: 1rem;
+    width: 75rem;
+    color: #ffffff;
+}
+
+#focus {
+    float: left;
+    width: 18.25rem;
+    height: 20rem;
+    background: #3d708f;
+}
+
+#carousel {
+    float: right;
+    width: 55.75rem;
+    height: 20rem;
+}
+
+#content {
+    width: 75em;
+    height: 66em;
+    clear: both;
+    padding-top: 1rem;
+    background: #ffffff;
+}
+
+#about {
+    position: absolute;
+}
+
+#bottomInformation {
+    height: 18.5rem;
+    background: #122d3e;
+}
+
+#WebInformation {
+    height: 80px;
+    text-align: center;
+    background: #ffffff;
+}
+
+#m_homePageTitle {
+    width: 100%;
+    height: 4rem;
+    display: flex;
+    justify-content: left;
+    top: 0;
+    z-index: 999;
+    position: sticky;
+    background: #3d708f;
+}
+
+#m_hamburger {
+    width: 1.5rem;
+    float: left;
+}
+
+#m_hamburgerMenu {
+    width: 90%;
+    height: 100vh;
+    overflow-y: scroll;
+    position: absolute;
+    z-index: 1000;
+    background: #ffffff;
+    display: none;
+}
+
+#m_hamburgerClose {
+    width: 100%;
+    height: 4rem;
+    top: 0;
+    z-index: 1000;
+    position: sticky;
+    background: #ffffff;
+}
+
+#m_ANOTHERPRICE {
+    min-width: 4rem;
+    width: 4rem;
+    margin-left: 1rem;
+    float: left;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#m_search {
+    height: 1.8rem;
+    margin-left: 1rem;
+    margin-top: 1rem;
+    border-radius: 4px;
+    float: left;
+    position: relative;
+    background: #ffffff;
+}
+
+#m_memberLogin {
+    width: 40px;
+    margin-left: 0.5rem;
+}
+
+#m_shoppingCart {
+    width: 40px;
+    margin-left: 0.5rem;
+}
+
+#m_carousel {
+    margin-top: 5rem;
+}
+
+#m_bookCover {
+    margin-top: 1rem;
+}

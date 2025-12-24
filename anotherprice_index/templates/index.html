@@ -1,0 +1,2449 @@
+<!DOCTYPE html>
+<html lang="zh">
+
+<head>
+
+  <title>這是另外的價錢</title>
+
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="../static/css/front_page.css" rel="stylesheet">
+  <link href="../static/css/front_page_part.css" rel="stylesheet">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+
+  <script>
+
+    window.onscroll = function () {
+
+      scrollfunction()
+
+      var homePageTitle = document.getElementById('homePageTitle');
+      var initialOffset = homePageTitle.offsetTop;
+      var scrollTop = window.pageYOffset || document.documentElement.scrollTop;
+
+      if (scrollTop >= initialOffset + 10) {
+        homePageTitle.style.position = 'fixed';
+        homePageTitle.style.top = '0';
+      } else {
+        homePageTitle.style.position = 'static';
+      }
+
+    };
+
+    function scrollfunction() {
+      if (document.body.scrollTop > 150 || document.documentElement.scrollTop > 150) {
+        document.getElementById("backToTopButton").style.display = "block";
+      }
+      else {
+        document.getElementById("backToTopButton").style.display = "none";
+      }
+    }
+
+    function backToTopfunction() {
+      document.body.scrollTop = 0;
+      document.documentElement.scrollTop = 0;
+    }
+
+    window.onload = function () {
+
+      var show1 = document.getElementById("ChineseBookButton");
+      var showboard1 = document.getElementById("ChineseBook");
+      show1.onmouseover = function () {
+        showboard1.style.display = 'block'
+        show1.style.background = '#ffffff'
+        show1.style.color = '#3d708f'
+      }
+      show1.onmouseout = function () {
+        showboard1.style.display = 'none'
+        show1.style.background = 'none'
+        show1.style.color = '#ffffff'
+      }
+      showboard1.onmouseover = function () {
+        showboard1.style.display = 'block'
+        show1.style.background = '#ffffff'
+        show1.style.color = '#3d708f'
+      }
+      showboard1.onmouseout = function () {
+        showboard1.style.display = 'none'
+        show1.style.background = 'none'
+        show1.style.color = '#ffffff'
+      }
+
+      var show2 = document.getElementById("EnglishBookButton");
+      var showboard2 = document.getElementById("EnglishBook");
+      show2.onmouseover = function () {
+        showboard2.style.display = 'block'
+        show2.style.background = '#ffffff'
+        show2.style.color = '#3d708f'
+      }
+      show2.onmouseout = function () {
+        showboard2.style.display = 'none'
+        show2.style.background = 'none'
+        show2.style.color = '#ffffff'
+      }
+      showboard2.onmouseover = function () {
+        showboard2.style.display = 'block'
+        show2.style.background = '#ffffff'
+        show2.style.color = '#3d708f'
+      }
+      showboard2.onmouseout = function () {
+        showboard2.style.display = 'none'
+        show2.style.background = 'none'
+        show2.style.color = '#ffffff'
+      }
+
+      var show3 = document.getElementById("comicButton");
+      var showboard3 = document.getElementById("comic");
+      show3.onmouseover = function () {
+        showboard3.style.display = 'block'
+        show3.style.background = '#ffffff'
+        show3.style.color = '#3d708f'
+      }
+      show3.onmouseout = function () {
+        showboard3.style.display = 'none'
+        show3.style.background = 'none'
+        show3.style.color = '#ffffff'
+      }
+      showboard3.onmouseover = function () {
+        showboard3.style.display = 'block'
+        show3.style.background = '#ffffff'
+        show3.style.color = '#3d708f'
+      }
+      showboard3.onmouseout = function () {
+        showboard3.style.display = 'none'
+        show3.style.background = 'none'
+        show3.style.color = '#ffffff'
+      }
+
+      var show4 = document.getElementById("novelButton");
+      var showboard4 = document.getElementById("novel");
+      show4.onmouseover = function () {
+        showboard4.style.display = 'block'
+        show4.style.background = '#ffffff'
+        show4.style.color = '#3d708f'
+      }
+      show4.onmouseout = function () {
+        showboard4.style.display = 'none'
+        show4.style.background = 'none'
+        show4.style.color = '#ffffff'
+      }
+      showboard4.onmouseover = function () {
+        showboard4.style.display = 'block'
+        show4.style.background = '#ffffff'
+        show4.style.color = '#3d708f'
+      }
+      showboard4.onmouseout = function () {
+        showboard4.style.display = 'none'
+        show4.style.background = 'none'
+        show4.style.color = '#ffffff'
+      }
+
+      var show5 = document.getElementById("childButton");
+      var showboard5 = document.getElementById("child");
+      show5.onmouseover = function () {
+        showboard5.style.display = 'block'
+        show5.style.background = '#ffffff'
+        show5.style.color = '#3d708f'
+      }
+      show5.onmouseout = function () {
+        showboard5.style.display = 'none'
+        show5.style.background = 'none'
+        show5.style.color = '#ffffff'
+      }
+      showboard5.onmouseover = function () {
+        showboard5.style.display = 'block'
+        show5.style.background = '#ffffff'
+        show5.style.color = '#3d708f'
+      }
+      showboard5.onmouseout = function () {
+        showboard5.style.display = 'none'
+        show5.style.background = 'none'
+        show5.style.color = '#ffffff'
+      }
+
+      var show6 = document.getElementById("makeupButton");
+      var showboard6 = document.getElementById("makeup");
+      show6.onmouseover = function () {
+        showboard6.style.display = 'block'
+        show6.style.background = '#ffffff'
+        show6.style.color = '#3d708f'
+      }
+      show6.onmouseout = function () {
+        showboard6.style.display = 'none'
+        show6.style.background = 'none'
+        show6.style.color = '#ffffff'
+      }
+      showboard6.onmouseover = function () {
+        showboard6.style.display = 'block'
+        show6.style.background = '#ffffff'
+        show6.style.color = '#3d708f'
+      }
+      showboard6.onmouseout = function () {
+        showboard6.style.display = 'none'
+        show6.style.background = 'none'
+        show6.style.color = '#ffffff'
+      }
+
+      var show7 = document.getElementById("magazineButton");
+      var showboard7 = document.getElementById("magazine");
+      show7.onmouseover = function () {
+        showboard7.style.display = 'block'
+        show7.style.background = '#ffffff'
+        show7.style.color = '#3d708f'
+      }
+      show7.onmouseout = function () {
+        showboard7.style.display = 'none'
+        show7.style.background = 'none'
+        show7.style.color = '#ffffff'
+      }
+      showboard7.onmouseover = function () {
+        showboard7.style.display = 'block'
+        show7.style.background = '#ffffff'
+        show7.style.color = '#3d708f'
+      }
+      showboard7.onmouseout = function () {
+        showboard7.style.display = 'none'
+        show7.style.background = 'none'
+        show7.style.color = '#ffffff'
+      }
+
+      var show8 = document.getElementById("ChineseCDButton");
+      var showboard8 = document.getElementById("ChineseCD");
+      show8.onmouseover = function () {
+        showboard8.style.display = 'block'
+        show8.style.background = '#ffffff'
+        show8.style.color = '#3d708f'
+      }
+      show8.onmouseout = function () {
+        showboard8.style.display = 'none'
+        show8.style.background = 'none'
+        show8.style.color = '#ffffff'
+      }
+      showboard8.onmouseover = function () {
+        showboard8.style.display = 'block'
+        show8.style.background = '#ffffff'
+        show8.style.color = '#3d708f'
+      }
+      showboard8.onmouseout = function () {
+        showboard8.style.display = 'none'
+        show8.style.background = 'none'
+        show8.style.color = '#ffffff'
+      }
+
+      var show9 = document.getElementById("EnglishCDButton");
+      var showboard9 = document.getElementById("EnglishCD");
+      show9.onmouseover = function () {
+        showboard9.style.display = 'block'
+        show9.style.background = '#ffffff'
+        show9.style.color = '#3d708f'
+      }
+      show9.onmouseout = function () {
+        showboard9.style.display = 'none'
+        show9.style.background = 'none'
+        show9.style.color = '#ffffff'
+      }
+      showboard9.onmouseover = function () {
+        showboard9.style.display = 'block'
+        show9.style.background = '#ffffff'
+        show9.style.color = '#3d708f'
+      }
+      showboard9.onmouseout = function () {
+        showboard9.style.display = 'none'
+        show9.style.background = 'none'
+        show9.style.color = '#ffffff'
+      }
+
+      var showX = document.getElementById("shoppingCart");
+      var showboardX = document.getElementById("cartDetail");
+      showX.onmouseover = function () {
+        showboardX.style.display = 'block'
+      }
+      showX.onmouseout = function () {
+        showboardX.style.display = 'none'
+      }
+      showboardX.onmouseover = function () {
+        showboardX.style.display = 'block'
+      }
+      showboardX.onmouseout = function () {
+        showboardX.style.display = 'none'
+      }
+
+      var m_homePageTitle = document.getElementById('m_homePageTitle');
+      var m_initialOffset = m_homePageTitle.offsetTop;
+      var m_scrollTop = window.pageYOffset || document.documentElement.scrollTop;
+
+      if (m_scrollTop >= m_initialOffset) {
+        m_homePageTitle.style.position = 'fixed';
+        m_homePageTitle.style.top = '0';
+      } else {
+        m_homePageTitle.style.position = 'static';
+      }
+
+      var windowWidth = window.innerWidth;
+      var input = document.getElementById('m_search');
+      input.style.width = windowWidth - 225 + 'px';
+      var input = document.getElementById('m_searchInputText');
+      input.style.width = windowWidth - 280 + 'px';
+
+      var m_showHamburger = document.getElementById("m_hamburgerShowButton");
+      var m_closeHamburger = document.getElementById("m_hamburgerCloseButton");
+      var m_showBoard = document.getElementById("m_hamburgerMenu");
+      m_showHamburger.onclick = function () {
+        m_showBoard.style.display = 'block'
+      }
+      m_closeHamburger.onclick = function () {
+        m_showBoard.style.display = 'none'
+      }
+
+      var m_show1 = document.getElementById("m_ChineseBookButtonShow");
+      m_show1.onclick = function () {
+        var m_showboard1 = document.getElementById("m_ChineseBook");
+        if (m_show1.value == "﹀") {
+          m_show1.value = "︿";
+          m_showboard1.style.display = 'block'
+        } else {
+          m_show1.value = "﹀";
+          m_showboard1.style.display = 'none'
+        }
+      }
+
+      var m_show2 = document.getElementById("m_EnglishBookButtonShow");
+      m_show2.onclick = function () {
+        var m_showboard2 = document.getElementById("m_EnglishBook");
+        if (m_show2.value == "﹀") {
+          m_show2.value = "︿";
+          m_showboard2.style.display = 'block'
+        } else {
+          m_show2.value = "﹀";
+          m_showboard2.style.display = 'none'
+        }
+      }
+
+      var m_show3 = document.getElementById("m_comicButtonShow");
+      m_show3.onclick = function () {
+        var m_showboard3 = document.getElementById("m_comic");
+        if (m_show3.value == "﹀") {
+          m_show3.value = "︿";
+          m_showboard3.style.display = 'block'
+        } else {
+          m_show3.value = "﹀";
+          m_showboard3.style.display = 'none'
+        }
+      }
+
+      var m_show4 = document.getElementById("m_novelButtonShow");
+      m_show4.onclick = function () {
+        var m_showboard4 = document.getElementById("m_novel");
+        if (m_show4.value == "﹀") {
+          m_show4.value = "︿";
+          m_showboard4.style.display = 'block'
+        } else {
+          m_show4.value = "﹀";
+          m_showboard4.style.display = 'none'
+        }
+      }
+
+      var m_show5 = document.getElementById("m_childButtonShow");
+      m_show5.onclick = function () {
+        var m_showboard5 = document.getElementById("m_child");
+        if (m_show5.value == "﹀") {
+          m_show5.value = "︿";
+          m_showboard5.style.display = 'block'
+        } else {
+          m_show5.value = "﹀";
+          m_showboard5.style.display = 'none'
+        }
+      }
+
+      var m_show6 = document.getElementById("m_makeupButtonShow");
+      m_show6.onclick = function () {
+        var m_showboard6 = document.getElementById("m_makeup");
+        if (m_show6.value == "﹀") {
+          m_show6.value = "︿";
+          m_showboard6.style.display = 'block'
+        } else {
+          m_show6.value = "﹀";
+          m_showboard6.style.display = 'none'
+        }
+      }
+
+      var m_show7 = document.getElementById("m_magazineButtonShow");
+      m_show7.onclick = function () {
+        var m_showboard7 = document.getElementById("m_magazine");
+        if (m_show7.value == "﹀") {
+          m_show7.value = "︿";
+          m_showboard7.style.display = 'block'
+        } else {
+          m_show7.value = "﹀";
+          m_showboard7.style.display = 'none'
+        }
+      }
+
+      var m_show8 = document.getElementById("m_ChineseCDButtonShow");
+      m_show8.onclick = function () {
+        var m_showboard8 = document.getElementById("m_ChineseCD");
+        if (m_show8.value == "﹀") {
+          m_show8.value = "︿";
+          m_showboard8.style.display = 'block'
+        } else {
+          m_show8.value = "﹀";
+          m_showboard8.style.display = 'none'
+        }
+      }
+
+      var m_show9 = document.getElementById("m_EnglishCDButtonShow");
+      m_show9.onclick = function () {
+        var m_showboard9 = document.getElementById("m_EnglishCD");
+        if (m_show9.value == "﹀") {
+          m_show9.value = "︿";
+          m_showboard9.style.display = 'block'
+        } else {
+          m_show9.value = "﹀";
+          m_showboard9.style.display = 'none'
+        }
+      }
+
+    }
+
+  </script>
+
+</head>
+
+<body>
+  <!--電腦版-->
+  <div id="computer">
+    <!--頂部廣告-->
+    <div id="topAdvertise">
+      <img class="topAdvertiseImage" src="../static/images/Top_Advertise.jpg" alt="頂部廣告">
+    </div>
+    <!--標題-->
+    <div id="homePageTitle">
+      <div id="ANOTHERPRICE">
+        <a href="../">
+          <img class="homeLinkImage" src="../static/images/title.png" alt="標題">
+        </a>
+      </div>
+
+      <div id="function">
+        <div id="search">
+          <p>
+            <input type="text" class="searchInputText">
+            <input type="submit" value="搜尋" class="searchInputSubmit" onclick="window.location.href='/search_results'">
+          </p>
+          <p class="headLine">本日頭條：Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+        </div>
+
+        <div id="searchAadvertise">
+          <img src="../static/images/Search_Advertise.jpg" alt="搜尋廣告" class="searchAadvertiseImage">
+        </div>
+
+        <div id="memberLogin">
+          {% if isMember %}
+          <p class="memberSelect">你好，{{ username }}</p>
+          {% else %}
+          <p class="memberSelect">
+            <a href="../member_login" class="member">登入</a>
+            |
+            <a href="../member_register" class="member">註冊</a>
+          </p>
+          {% endif %}
+
+          <p class="memberCenter">
+            <a href="../member_centre" class="member">會員中心</a>
+          </p>
+        </div>
+
+        <div id="shoppingCart">
+          <p class="cart">
+            <a href="../shopping_cart" class="cartImage"><img src="../static/images/Cart.png" alt="標題"></a>
+            <a href="../shopping_cart" class="cartWord">購物車</a>
+          </p>
+        </div>
+
+        <!--購物車細節-->
+        <div id="cartDetail">
+
+          {% if isMember %}
+
+          <table class="cartDetailItem">
+
+            <tr>
+              <td style="width: 1rem;"></td>
+              <td style="width: 15rem;">Lorem ipsum dolor sit amet.</td>
+              <td style="width: 1rem;"></td>
+              <td style="width: 2rem;">3</td>
+              <td style="width: 1rem;"></td>
+            </tr>
+
+            <tr>
+              <td></td>
+              <td>Lorem ipsum dolor sit amet.</td>
+              <td></td>
+              <td>3</td>
+              <td></td>
+            </tr>
+
+          </table>
+
+          {% else %}
+
+          {% endif %}
+
+        </div>
+
+      </div>
+
+    </div>
+    <!--回上頁-->
+    <div id="backToTop">
+      <button id="backToTopButton" onclick="backToTopfunction()" class="backToTopStyle">↑</button>
+    </div>
+    <!--類別列-->
+    <div id="categoryColumn">
+      <!--按鈕-->
+      <div id="categoryButton">
+        <button id="ChineseBookButton" class="category" onclick="window.location.href='/search_results'">中文書籍</button>
+        <button id="EnglishBookButton" class="category" onclick="window.location.href='/search_results'">外文書籍</button>
+        <button id="comicButton" class="category" onclick="window.location.href='/search_results'">動漫電玩</button>
+        <button id="novelButton" class="category" onclick="window.location.href='/search_results'">文學小說</button>
+        <button id="childButton" class="category" onclick="window.location.href='/search_results'">兒童親子</button>
+        <button id="makeupButton" class="category" onclick="window.location.href='/search_results'">美妝保健</button>
+        <button id="magazineButton" class="category" onclick="window.location.href='/search_results'">潮流雜誌</button>
+        <button id="ChineseCDButton" class="category" onclick="window.location.href='/search_results'">華語CD</button>
+        <button id="EnglishCDButton" class="category" onclick="window.location.href='/search_results'">外語CD</button>
+      </div>
+      <!--中文書-->
+      <div id="ChineseBook" class="categoryBoard">
+        <table class="categoryItem">
+          <tr>
+            <th class="categoryItem">
+              <p>本月熱銷</p>
+            </th>
+            <th class="categoryItem">
+            </th>
+            <th class="categoryItem">
+              <p>編輯推薦</p>
+            </th>
+            <th class="categoryItem">
+            </th>
+            <th class="categoryItem">
+              <p>新品上架</p>
+            </th>
+            <th class="categoryItem">
+            </th>
+          </tr>
+          <tr>
+            <td><a href="../book_detail/96">
+                <img class="recommendImage" src="../static/images/product_pic/getImage096.jpg" alt="推薦書籍">
+              </a>
+            </td>
+            <td>
+              <p class="recommendIntroduction">
+                在世界的另一個角落，有著一個神秘的魔法國度，裡面住滿了巫師。施魔法、派貓頭鷹送信都只是基本，他們還騎飛天掃帚當交通工具，和畫像裡的人交談，與各式各樣的神奇生物比鄰而居，甚至還有完整培育巫師的學校。
+              </p>
+            </td>
+            <td><a href="../book_detail/91">
+                <img class="recommendImage" src="../static/images/product_pic/getImage091.jpg" alt="推薦書籍">
+              </a>
+            </td>
+            <td>
+              <p class="recommendIntroduction">
+                在Atlantis學院裡，<br>所有知識都不是知識，<br>只有肯定了自己，世界才會肯定你<br>度過地獄般的期末考後，漾漾迎來了高中的第一個寒假！<br>回到原世界，已經不是「正常人」的他，馬上被女鬼逼迫解決問題！？
+              </p>
+            </td>
+            <td><a href="../book_detail/84">
+                <img class="recommendImage" src="../static/images/product_pic/getImage084.jpg" alt="推薦書籍">
+              </a>
+            </td>
+            <td>
+              <p class="recommendIntroduction">
+                蛇魅盤繞雨林，鬼霧來去無影，吞噬擅闖者性命。沼澤中，極度危險的紅煙信號升起；山谷裡，詭異人語持續於耳邊呼喚，在在昭示了前路的險阻。<br>是何等恐怖的最終宿命，逼得西沙考古隊員消聲匿跡？
+              </p>
+            </td>
+          </tr>
+
+          <tr>
+            <td>
+              <p class="recommendName">哈利波特(1)<br>神秘的魔法石</p>
+            </td>
+            <td>
+            </td>
+            <td>
+              <p class="recommendName">特殊傳說<br>新版vol.6 塵封的祕密</p>
+            </td>
+            <td>
+            </td>
+            <td>
+              <p class="recommendName">盜墓筆記之9<br>蛇沼鬼城Ⅳ</p>
+            </td>
+            <td>
+            </td>
+          </tr>
+
+        </table>
+
+      </div>
+
+      <div id="EnglishBook" class="categoryBoard">
+
+        <table class="categoryItem">
+
+          <tr>
+            <th class="categoryItem">
+              <p>本月熱銷</p>
+            </th>
+            <th class="categoryItem">
+            </th>
+            <th class="categoryItem">
+              <p>編輯推薦</p>
+            </th>
+            <th class="categoryItem">
+            </th>
+            <th class="categoryItem">
+              <p>新品上架</p>
+            </th>
+            <th class="categoryItem">
+            </th>
+          </tr>
+
+          <tr>
+            <td><a href="../book_detail/293">
+                <img class="recommendImage" src="../static/images/product_pic/getImage293.jpg" alt="推薦書籍">
+              </a>
+            </td>
+            <td>
+              <p class="recommendIntroduction">
+                眾所皆知契約戀愛最終都會去掉契約，只剩戀愛。<br>不過身為科學家，不承認沒有驗證的假說。這對冤家親自實驗給你看！
+              </p>
+            </td>
+            <td><a href="../book_detail/294">
+                <img class="recommendImage" src="../static/images/product_pic/getImage294.jpg" alt="推薦書籍">
+              </a>
+            </td>
+            <td>
+              <p class="recommendIntroduction">
+                This is a good story for a preteen. The protagonist is on the spectrum but is accepted by her family and
+                some others. Overall, she has a pretty good self-concept and she succeeds at the task she sets for
+                herself.
+              </p>
+            </td>
+            <td><a href="../book_detail/295">
+                <img class="recommendImage" src="../static/images/product_pic/getImage295.jpg" alt="推薦書籍">
+              </a>
+            </td>
+            <td>
+              <p class="recommendIntroduction">
+                It's a beautiful and empowering novel that will inspire readers of all ages to embrace their true selves
+                and celebrate the differences that make us all unique.
+              </p>
+            </td>
+          </tr>
+
+          <tr>
+            <td>
+              <p class="recommendName">The Love Hypothesis</p>
+            </td>
+            <td>
+            </td>
+            <td>
+              <p class="recommendName">A Kind Of Spark</p>
+            </td>
+            <td>
+            </td>
+            <td>
+              <p class="recommendName">Show Us Who You Are</p>
+            </td>
+            <td>
+            </td>
+          </tr>
+
+        </table>
+
+      </div>
+
+      <div id="comic" class="categoryBoard">
+
+        <table class="categoryItem">
+
+          <tr>
+            <th class="categoryItem">
+              <p>本月熱銷</p>
+            </th>
+            <th class="categoryItem">
+            </th>
+            <th class="categoryItem">
+              <p>編輯推薦</p>
+            </th>
+            <th class="categoryItem">
+            </th>
+            <th class="categoryItem">
+              <p>新品上架</p>
+            </th>
+            <th class="categoryItem">
+            </th>
+          </tr>
+
+          <tr>
+            <td><a href="../book_detail/290">
+                <img class="recommendImage" src="../static/images/product_pic/getImage290.jpg" alt="推薦書籍">
+              </a>
+            </td>
+            <td>
+              <p class="recommendIntroduction">
+                在這本書當中，以他獨門的高級動畫講座課程為基礎，查理威廉斯歸納了不論從新手到專家、傳統手繪動畫者到電腦動畫高手，每個動畫家都需要瞭解的動畫基本法則。
+              </p>
+            </td>
+            <td>
+              <a href="../book_detail/291">
+                <img class="recommendImage" src="../static/images/product_pic/getImage291.jpg" alt="推薦書籍">
+              </a>
+            </td>
+            <td>
+              <p class="recommendIntroduction">
+                細心傾聽學習者遇到的繪畫瓶頸，專為你所編寫的人物角色繪畫大全！<br>你正為了繪畫上的瓶頸而煩惱嗎？<br>是不是因為問題太過瑣碎，到處都找不到解答呢？<br>本書正是為了這樣的你而編寫的。
+              </p>
+            </td>
+            <td>
+              <a href="../book_detail/292">
+                <img class="recommendImage" src="../static/images/product_pic/getImage292.jpg" alt="推薦書籍">
+              </a>
+            </td>
+            <td>
+              <p class="recommendIntroduction">
+                人體結構繪畫是遊戲動漫從業人員必備的技能，是創作的一把利器。 人體結構的準確描繪是創作人物的基礎，紮實地掌握人體結構繪畫，可以在設計遊戲動漫人物時遊刃有餘，畫出造型完美的人體。
+              </p>
+            </td>
+          </tr>
+
+          <tr>
+            <td>
+              <p class="recommendName">動漫基礎技法《增訂版》</p>
+            </td>
+            <td>
+            </td>
+            <td>
+              <p class="recommendName">韓國繪師的動漫角色速繪祕技</p>
+            </td>
+            <td>
+            </td>
+            <td>
+              <p class="recommendName">遊戲動漫人體結構造型手繪技法</p>
+            </td>
+            <td>
+            </td>
+          </tr>
+
+        </table>
+
+      </div>
+
+      <div id="novel" class="categoryBoard">
+
+        <table class="categoryItem">
+
+          <tr>
+            <th class="categoryItem">
+              <p>本月熱銷</p>
+            </th>
+            <th class="categoryItem">
+            </th>
+            <th class="categoryItem">
+              <p>編輯推薦</p>
+            </th>
+            <th class="categoryItem">
+            </th>
+            <th class="categoryItem">
+              <p>新品上架</p>
+            </th>
+            <th class="categoryItem">
+            </th>
+          </tr>
+
+          <tr>
+            <td>
+              <a href="../book_detail/287">
+                <img class="recommendImage" src="../static/images/product_pic/getImage287.jpg" alt="推薦書籍">
+              </a>
+            </td>
+            <td>
+              <p class="recommendIntroduction">
+                日本「讀者最喜愛的一本書」票選第一名。<br>獨家收錄【《心》及漱石文學百年特輯】<br>首度公開漱石親自操刀設計的《心》初版裝幀、各類改編作品、漱石的文學散步地圖，與漱石文學的三角戀之謎。
+              </p>
+            </td>
+            <td>
+              <a href="../book_detail/288">
+                <img class="recommendImage" src="../static/images/product_pic/getImage288.jpg" alt="推薦書籍">
+              </a>
+            </td>
+            <td>
+              <p class="recommendIntroduction">
+                美國文學評論大師　湯瑪斯．佛斯特教授最新力作<br>各界名人　肆一、譚光磊、郝譽翔、許榮哲、王聰威、陳珊妮、張靜之好評推薦<br>小說愛讀者與未來新銳作家必備的「小說教戰手冊」！
+              </p>
+            </td>
+            <td>
+              <a href="../book_detail/289">
+                <img class="recommendImage" src="../static/images/product_pic/getImage289.jpg" alt="推薦書籍">
+              </a>
+            </td>
+            <td>
+              <p class="recommendIntroduction">
+                槍響前，他必須找到拯救被告的方法。<br>一艘遠洋漁船，承載著一樁滅門命案的祕密；<br>為了找出真相、伸張正義，賭上的可能是整個國家的命運<br>★評審一致盛讚！「第二屆鏡文學百萬影視小說大獎」首獎作品，影視化確定！
+              </p>
+            </td>
+          </tr>
+
+          <tr>
+            <td>
+              <p class="recommendName">心：夏目漱石公認代表作</p>
+            </td>
+            <td>
+            </td>
+            <td>
+              <p class="recommendName">美國文學院最受歡迎的23堂小說課</p>
+            </td>
+            <td>
+            </td>
+            <td>
+              <p class="recommendName">八尺門的辯護人</p>
+            </td>
+            <td>
+            </td>
+          </tr>
+
+        </table>
+
+      </div>
+
+      <div id="child" class="categoryBoard">
+
+        <table class="categoryItem">
+
+          <tr>
+            <th class="categoryItem">
+              <p>本月熱銷</p>
+            </th>
+            <th class="categoryItem">
+            </th>
+            <th class="categoryItem">
+              <p>編輯推薦</p>
+            </th>
+            <th class="categoryItem">
+            </th>
+            <th class="categoryItem">
+              <p>新品上架</p>
+            </th>
+            <th class="categoryItem">
+            </th>
+          </tr>
+
+          <tr>
+            <td>
+              <a href="../book_detail/284">
+                <img class="recommendImage" src="../static/images/product_pic/getImage284.jpg" alt="推薦書籍">
+              </a>
+            </td>
+            <td>
+              <p class="recommendIntroduction">
+                父母的知識、信念與堅持，就像陽光、空氣和水，<br>讓教養種子得以發芽茁壯！<br>教育疑惑雖無法在彈指間就讓人豁然開朗，<br>但只要大人不放棄學習，<br>沒有教不好的孩子！
+              </p>
+            </td>
+            <td>
+              <a href="../book_detail/285">
+                <img class="recommendImage" src="../static/images/product_pic/getImage285.jpg" alt="推薦書籍">
+              </a>
+            </td>
+            <td>
+              <p class="recommendIntroduction">
+                ★ 紐約時報暢銷榜第一名！<br>★ 亞馬遜網路書店暢銷榜「初等教育」以及「學齡兒童教養」類第一名！<br>★ 英語版已暢銷破百萬冊！<br>★ 各國輔導專家一致推薦，增進親子關係，天下父母必讀！
+              </p>
+            </td>
+            <td>
+              <a href="../book_detail/286">
+                <img class="recommendImage" src="../static/images/product_pic/getImage286.jpg" alt="推薦書籍">
+              </a>
+            </td>
+            <td>
+              <p class="recommendIntroduction">
+                給5~10歲孩子與爸媽的親子英語學習插畫書<br>破百萬冊超人氣作者<br>繼給小小孩的年度暢銷書<br>《每天5分鐘親子英文》之後<br>為學齡孩子帶來的全新力作
+              </p>
+            </td>
+          </tr>
+
+          <tr>
+            <td>
+              <p class="recommendName">機智的育兒生活指導手冊</p>
+            </td>
+            <td>
+            </td>
+            <td>
+              <p class="recommendName">兒童愛之語(修訂版)</p>
+            </td>
+            <td>
+            </td>
+            <td>
+              <p class="recommendName">每天10分鐘學齡兒童親子英文</p>
+            </td>
+            <td>
+            </td>
+          </tr>
+
+        </table>
+
+      </div>
+
+      <div id="makeup" class="categoryBoard">
+
+        <table class="categoryItem">
+
+          <tr>
+            <th class="categoryItem">
+              <p>本月熱銷</p>
+            </th>
+            <th class="categoryItem">
+            </th>
+            <th class="categoryItem">
+              <p>編輯推薦</p>
+            </th>
+            <th class="categoryItem">
+            </th>
+            <th class="categoryItem">
+              <p>新品上架</p>
+            </th>
+            <th class="categoryItem">
+            </th>
+          </tr>
+
+          <tr>
+            <td>
+              <a href="../book_detail/281">
+                <img class="recommendImage" src="../static/images/product_pic/getImage281.jpg" alt="推薦書籍">
+              </a>
+            </td>
+            <td>
+              <p class="recommendIntroduction">
+                日常生活中最重要的獲取資訊方法就是「看」。任何工具只要經年累月地使用，很容易就會產生某種程度的損傷，隨著年齡增長，白內障的狀況變得更容易發生，若本書能保護您的「視覺」，對我來說就是最開心的事了。
+              </p>
+            </td>
+            <td>
+              <a href="../book_detail/282">
+                <img class="recommendImage" src="../static/images/product_pic/getImage282.jpg" alt="推薦書籍">
+              </a>
+            </td>
+            <td>
+              <p class="recommendIntroduction">
+                以一雙巧手及對時尚潮流的超高敏感度，替無數藝人明星打造完美形象。提倡如何讓「路人變美人」的美麗概念，始終是明川老師深受廣大女性青睞的關鍵，運用多年來的造型實戰經驗，找出最精準省力的方法，造福所有女人。
+              </p>
+            </td>
+            <td>
+              <a href="../book_detail/283">
+                <img class="recommendImage" src="../static/images/product_pic/getImage283.jpg" alt="推薦書籍">
+              </a>
+            </td>
+            <td>
+              <p class="recommendIntroduction">
+                ★本書教你易懂該做的保健腸識。<br>★本書告訴你可以擁有好腸道的實用祕訣。<br>★食安風暴下，本書教你自保的用油知識。<br>★本書教你分辨真假食物，為自己調整飲食習慣。
+              </p>
+            </td>
+          </tr>
+
+          <tr>
+            <td>
+              <p class="recommendName">護眼保健＆眼疾預防完全手冊</p>
+            </td>
+            <td>
+            </td>
+            <td>
+              <p class="recommendName">一秒變美人</p>
+            </td>
+            <td>
+            </td>
+            <td>
+              <p class="recommendName">護好腸，健康從裡美到外！</p>
+            </td>
+            <td>
+            </td>
+          </tr>
+
+        </table>
+
+      </div>
+
+      <div id="magazine" class="categoryBoard">
+
+        <table class="categoryItem">
+
+          <tr>
+            <th class="categoryItem">
+              <p>本月熱銷</p>
+            </th>
+            <th class="categoryItem">
+            </th>
+            <th class="categoryItem">
+              <p>編輯推薦</p>
+            </th>
+            <th class="categoryItem">
+            </th>
+            <th class="categoryItem">
+              <p>新品上架</p>
+            </th>
+            <th class="categoryItem">
+            </th>
+          </tr>
+
+          <tr>
+            <td>
+              <a href="../book_detail/249">
+                <img class="recommendImage" src="../static/images/product_pic/getImage249.jpg" alt="推薦書籍">
+              </a>
+            </td>
+            <td>
+              <p class="recommendIntroduction">
+                雜誌內容有趣且多樣化，除了國際大事之外，也富含生活、藝術、娛樂等專題報導。閱讀時代週能補足一般台灣新聞的不足，刊適合高階主管、專業人士，也適合學習英文、準備出國留學的學生。
+              </p>
+            </td>
+            <td>
+              <a href="../book_detail/254">
+                <img class="recommendImage" src="../static/images/product_pic/getImage254.jpg" alt="推薦書籍">
+              </a>
+            </td>
+            <td>
+              <p class="recommendIntroduction">
+                從現在開始抗老隨著年齡增長，皮膚也會逐漸老化，雖然老化是無法避免但可以透過保養來讓自己保持在最佳狀況，隨著時代改變，優秀的抗老產品以及技術也陸續登場，許多人更是從20代就開始抗老，為了要讓大家可以更了解如何抗老，本期特別要收錄抗老特集。
+              </p>
+            </td>
+            <td>
+              <a href="../book_detail/264">
+                <img class="recommendImage" src="../static/images/product_pic/getImage264.jpg" alt="推薦書籍">
+              </a>
+            </td>
+            <td>
+              <p class="recommendIntroduction">
+                去年十一月OpenAI發布的生成式人工智慧ChatGPT，毋庸置疑已經成為現象級的科技突破。不僅短短兩個月就突破一億用戶數，更僅花了三個月，就迭代更新至GPT-4。它席捲全球的速度，甚至引發特斯拉創辦人馬斯克為首的科技要角，聯名要求停止訓練模型六個月，要整個發展踩煞車。
+              </p>
+            </td>
+          </tr>
+
+          <tr>
+            <td>
+              <p class="recommendName">TIME 時代週刊<br>第10期</p>
+            </td>
+            <td>
+            </td>
+            <td>
+              <p class="recommendName">MAQUIA<br>6月號</p>
+            </td>
+            <td>
+            </td>
+            <td>
+              <p class="recommendName">天下雜誌<br>第770期</p>
+            </td>
+            <td>
+            </td>
+          </tr>
+
+        </table>
+
+      </div>
+
+      <div id="ChineseCD" class="categoryBoard">
+
+        <table class="categoryItem">
+
+          <tr>
+            <th class="categoryItem">
+              <p>本月熱銷</p>
+            </th>
+            <th class="categoryItem">
+            </th>
+            <th class="categoryItem">
+              <p>編輯推薦</p>
+            </th>
+            <th class="categoryItem">
+            </th>
+            <th class="categoryItem">
+              <p>新品上架</p>
+            </th>
+            <th class="categoryItem">
+            </th>
+          </tr>
+
+          <tr>
+            <td>
+              <a href="../book_detail/30">
+                <img class="recommendImage" src="../static/images/product_pic/getImage030.jpg" alt="推薦書籍">
+              </a>
+            </td>
+            <td>
+              <p class="recommendIntroduction">
+                他將音樂合作的寬度與廣度延伸到極致，不僅有樂器、音樂家、詞曲創作者，青峰用音樂創作為我們示範了一次何謂不設限的合作；這一切起飛於純粹美的意念邀約，最後降落於悠揚旋律的作品成果，構成了吳青峰第二張個人全創作專輯《馬拉美的星期二》。
+              </p>
+            </td>
+            <td>
+              <a href="../book_detail/51">
+                <img class="recommendImage" src="../static/images/product_pic/getImage051.jpg" alt="推薦書籍">
+              </a>
+            </td>
+            <td>
+              <p class="recommendIntroduction">
+                是廢物還是禮物<br>我都滿足<br>愛 終將被安置在某處<br>餵養共⽣<br>成了我們他們<br>現在給你
+              </p>
+            </td>
+            <td>
+              <a href="../book_detail/48">
+                <img class="recommendImage" src="../static/images/product_pic/getImage048.jpg" alt="推薦書籍">
+              </a>
+            </td>
+            <td>
+              <p class="recommendIntroduction">
+                說到愛<br>一百部電影也定義不了 一萬首情歌也解釋不完<br>但或許 一個溫暖的擁抱就可以<br>談情說愛第一人選 蔡健雅Tanya 2011年遨遊音樂世界真心力作<br>說到愛 限量經典黑膠版
+              </p>
+            </td>
+          </tr>
+
+          <tr>
+            <td>
+              <p class="recommendName">吳青峰<br>《馬拉美的星期二》</p>
+            </td>
+            <td>
+            </td>
+            <td>
+              <p class="recommendName">徐佳瑩<br>《給》</p>
+            </td>
+            <td>
+            </td>
+            <td>
+              <p class="recommendName">蔡健雅<br>《說到愛》</p>
+            </td>
+            <td>
+            </td>
+          </tr>
+
+        </table>
+
+      </div>
+
+      <div id="EnglishCD" class="categoryBoard">
+
+        <table class="categoryItem">
+
+          <tr>
+            <th class="categoryItem">
+              <p>本月熱銷</p>
+            </th>
+            <th class="categoryItem">
+            </th>
+            <th class="categoryItem">
+              <p>編輯推薦</p>
+            </th>
+            <th class="categoryItem">
+            </th>
+            <th class="categoryItem">
+              <p>新品上架</p>
+            </th>
+            <th class="categoryItem">
+            </th>
+          </tr>
+
+          <tr>
+            <td>
+              <a href="../book_detail/71">
+                <img class="recommendImage" src="../static/images/product_pic/getImage071.jpg" alt="推薦書籍">
+              </a>
+            </td>
+            <td>
+              <p class="recommendIntroduction">
+                專輯銷售數字突破1300萬張門檻，70座獎項加冕的國民小公主Taylor
+                Swift/泰勒絲，清新美麗的外貌不是她最傲人的資產，甜美的歌喉、優異的創作才華、精湛的吉他/鋼琴彈奏技巧，讓她的音樂路走得比別人寬廣。
+              </p>
+            </td>
+            <td>
+              <a href="../book_detail/70">
+                <img class="recommendImage" src="../static/images/product_pic/getImage070.jpg" alt="推薦書籍">
+              </a>
+            </td>
+            <td>
+              <p class="recommendIntroduction">
+                締造全球2200萬張專輯與5000萬張數位下載單曲的傲人銷售，躋身全球前五名最暢銷數位音樂下載藝人行列，泰勒絲出道短短6年，不斷創造難以超越的排行奇蹟。
+              </p>
+            </td>
+            <td>
+              <a href="../book_detail/45">
+                <img class="recommendImage" src="../static/images/product_pic/getImage045.jpg" alt="推薦書籍">
+              </a>
+            </td>
+            <td>
+              <p class="recommendIntroduction">
+                夏川里美睽違3年全新專輯，特別選用了「かなさんどぉ」這個代表「愛你」意思的沖繩方言，作為專輯名稱。今年適逢沖繩回歸50周年，夏川也特別以「沖繩」作為主題，集結了多首充滿對故鄉、親人，以及重要的人滿滿愛意的作品。
+              </p>
+            </td>
+          </tr>
+
+          <tr>
+            <td>
+              <p class="recommendName">Speak Now</p>
+            </td>
+            <td>
+            </td>
+            <td>
+              <p class="recommendName">RED<br>[Deluxe Edition]</p>
+            </td>
+            <td>
+            </td>
+            <td>
+              <p class="recommendName">夏川里美《想你〜真的好愛你〜》</p>
+            </td>
+            <td>
+            </td>
+          </tr>
+
+        </table>
+
+      </div>
+
+    </div>
+
+    <!--主體-->
+    <div id="body">
+      <!--Focus-->
+      <div id="focus">
+        <p class="focusTitle">焦點內容</p>
+        <p class="focusItem">Lorem ipsum dolor sit amet.</p>
+        <p class="focusComment">Lorem ipsum dolor sit amet.</p>
+        <p class="focusItem">Lorem ipsum dolor sit amet.</p>
+        <p class="focusComment">Lorem ipsum dolor sit amet.</p>
+        <p class="focusItem">Lorem ipsum dolor sit amet.</p>
+        <p class="focusComment">Lorem ipsum dolor sit amet.</p>
+        <p class="focusItem">Lorem ipsum dolor sit amet.</p>
+        <p class="focusComment">Lorem ipsum dolor sit amet.</p>
+      </div>
+      <!--Carousel-->
+      <div id="carousel">
+        <div id="HomeCarousel" class="carousel slide" data-bs-ride="carousel">
+          <div class="carousel-indicators">
+            <button type="button" data-bs-target="#HomeCarousel" data-bs-slide-to="0" class="active"></button>
+            <button type="button" data-bs-target="#HomeCarousel" data-bs-slide-to="1"></button>
+            <button type="button" data-bs-target="#HomeCarousel" data-bs-slide-to="2"></button>
+          </div>
+          <div class="carousel-inner">
+            <div class="carousel-item active" data-bs-interval="3000">
+              <img src="../static/images/Carousel_Advertise_1.jpg" alt="放入註解" class="d-block"
+                style="width: 100%; height: 320px;">
+              <div class="carousel-caption"></div>
+            </div>
+            <div class="carousel-item" data-bs-interval="3000">
+              <img src="../static/images/Carousel_Advertise_2.jpg" alt="放入註解" class="d-block"
+                style="width: 100%; height: 320px;">
+              <div class="carousel-caption"></div>
+            </div>
+            <div class="carousel-item" data-bs-interval="3000">
+              <img src="../static/images/Carousel_Advertise_3.jpg" alt="放入註解" class="d-block"
+                style="width: 100%; height: 320px;">
+              <div class="carousel-caption"></div>
+            </div>
+          </div>
+          <button class="carousel-control-prev" type="button" data-bs-target="#HomeCarousel" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon"></span>
+          </button>
+          <button class="carousel-control-next" type="button" data-bs-target="#HomeCarousel" data-bs-slide="next">
+            <span class="carousel-control-next-icon"></span>
+          </button>
+        </div>
+      </div>
+      <!--Content-->
+      <div id="content">
+        <!--NewBook-->
+        <div id="newBook">
+          <p class="content">焦點新書</p>
+          <table class="recommend">
+            <tr>
+              <td class="recommendDetails">
+                <a href="../book_detail">
+                  <img class="recommendImage" src="../static/images/product_pic/getImage289.jpg" alt="推薦書籍">
+                </a>
+              </td>
+              <td class="recommendDetails">
+                <a href="../book_detail">
+                  <img class="recommendImage" src="../static/images/product_pic/getImage293.jpg" alt="推薦書籍">
+                </a>
+              </td>
+              <td class="recommendDetails">
+                <a href="../book_detail">
+                  <img class="recommendImage" src="../static/images/product_pic/getImage299.jpg" alt="推薦書籍">
+                </a>
+              </td>
+              <td class="recommendDetails">
+                <a href="../book_detail">
+                  <img class="recommendImage" src="../static/images/product_pic/getImage288.jpg" alt="推薦書籍">
+                </a>
+              </td>
+              <td class="recommendDetails">
+                <a href="../book_detail">
+                  <img class="recommendImage" src="../static/images/product_pic/getImage302.jpg" alt="推薦書籍">
+                </a>
+              </td>
+            </tr>
+
+            <tr>
+              <td>
+                <a href="../book_detail" class="recommendName">八尺門的辯護人</a>
+              </td>
+              <td>
+                <a href="../book_detail" class="recommendName">The Love Hypothesis</a>
+              </td>
+              <td>
+                <a href="../book_detail" class="recommendName">成為引領前進的力量</a>
+              </td>
+              <td>
+                <a href="../book_detail" class="recommendName">美國文學院最受歡迎的23堂小說課</a>
+              </td>
+              <td>
+                <a href="../book_detail" class="recommendName">特殊傳說Ⅲ vol.07</a>
+              </td>
+            </tr>
+
+          </table>
+        </div>
+        <!--Daily-->
+        <div id="daily">
+          <p class="content">每日推薦</p>
+          <table class="recommend">
+            <tr>
+              <td class="recommendDetails">
+                <a href="../book_detail">
+                  <img class="recommendImage" src="../static/images/product_pic/getImage025.jpg" alt="推薦書籍">
+                </a>
+              </td>
+              <td class="recommendDetails">
+                <a href="../book_detail">
+                  <img class="recommendImage" src="../static/images/product_pic/getImage296.jpg" alt="推薦書籍">
+                </a>
+              </td>
+              <td class="recommendDetails">
+                <a href="../book_detail">
+                  <img class="recommendImage" src="../static/images/product_pic/getImage030.jpg" alt="推薦書籍">
+                </a>
+              </td>
+              <td class="recommendDetails">
+                <a href="../book_detail">
+                  <img class="recommendImage" src="../static/images/product_pic/getImage249.jpg" alt="推薦書籍">
+                </a>
+              </td>
+              <td class="recommendDetails">
+                <a href="../book_detail">
+                  <img class="recommendImage" src="../static/images/product_pic/getImage028.jpg" alt="推薦書籍">
+                </a>
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <a href="../book_detail" class="recommendName">神奇柑仔店12：神祕人與駱駝輕鬆符</a>
+              </td>
+              <td>
+                <a href="../book_detail" class="recommendName">成為孩子生命中的貴人：四季藝術創辦人唐富美的教育創新</a>
+              </td>
+              <td>
+                <a href="../book_detail" class="recommendName">吳青峰 / 《馬拉美的星期二》 2LPs黑膠預購版</a>
+              </td>
+              <td>
+                <a href="../book_detail" class="recommendName">TIME 時代週刊 第10期</a>
+              </td>
+              <td>
+                <a href="../book_detail" class="recommendName">進入心流的七種藝術：停止內耗，顯化富足人生</a>
+              </td>
+            </tr>
+          </table>
+
+        </div>
+        <!--Discount-->
+        <div id="discount">
+          <p class="content">限時折扣</p>
+          <table class="recommend">
+            <tr>
+              <td class="recommendDetails">
+                <a href="../book_detail">
+                  <img class="recommendImage" src="../static/images/product_pic/getImage064.jpg" alt="推薦書籍">
+                </a>
+              </td>
+              <td class="recommendDetails">
+                <a href="../book_detail">
+                  <img class="recommendImage" src="../static/images/product_pic/getImage114.jpg" alt="推薦書籍">
+                </a>
+              </td>
+              <td class="recommendDetails">
+                <a href="../book_detail">
+                  <img class="recommendImage" src="../static/images/product_pic/getImage227.jpg" alt="推薦書籍">
+                </a>
+              </td>
+              <td class="recommendDetails">
+                <a href="../book_detail">
+                  <img class="recommendImage" src="../static/images/product_pic/getImage137.jpg" alt="推薦書籍">
+                </a>
+              </td>
+              <td class="recommendDetails">
+                <a href="../book_detail">
+                  <img class="recommendImage" src="../static/images/product_pic/getImage051.jpg" alt="推薦書籍">
+                </a>
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <a href="../book_detail" class="recommendName">《REAL LIFE》平裝版</a>
+              </td>
+              <td>
+                <a href="../book_detail" class="recommendName">The Return of the King</a>
+              </td>
+              <td>
+                <a href="../book_detail" class="recommendName">劉博仁不藏私的健腦祕密</a>
+              </td>
+              <td>
+                <a href="../book_detail" class="recommendName">咒術迴戰 18</a>
+              </td>
+              <td>
+                <a href="../book_detail" class="recommendName">徐佳瑩/【給】</a>
+              </td>
+            </tr>
+          </table>
+
+        </div>
+      </div>
+      <!--About-->
+      <div id="about">
+        <table class="about">
+          <tr>
+            <td class="about">
+              <p class="aboutHead">關於我們</p>
+            </td>
+            <td class="about">
+              <p class="aboutHead">會員服務</p>
+            </td>
+            <td class="about">
+              <p class="aboutHead">客服中心</p>
+            </td>
+            <td class="about" rowspan="4">
+              <img src="../static/images/logo.png" alt="logo" class="d-block" style="width: 100%;">
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <p class="aboutBody">創辦理念</p>
+            </td>
+            <td>
+              <p class="aboutBody">
+                <a href="../member_centre" class="aboutBody">我的帳號</a>
+              </p>
+            </td>
+            <td>
+              <p class="aboutBody">常見問題</p>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <p class="aboutBody">出版情報</p>
+            </td>
+            <td>
+              <p class="aboutBody">訂單查詢</p>
+            </td>
+            <td>
+              <p class="aboutBody">聯絡我們</p>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <p class="aboutBody">架設日誌</p>
+            </td>
+            <td>
+              <p class="aboutBody">
+                <a href="../member_point" class="aboutBody">點數查詢</a>
+              </p>
+            </td>
+            <td>
+              <p class="aboutBody"></p>
+            </td>
+          </tr>
+        </table>
+      </div>
+    </div>
+    <div id="bottomInformation">
+
+    </div>
+    <div id="WebInformation">
+      <br>
+      <p class="Information">專題名稱：這是另外的價錢電子商務平台</p>
+      <p class="Information" style="line-height: 1px;">架設時間：2023、05</p>
+    </div>
+  </div>
+  <!--手機版-->
+  <div id="mobile">
+    <div id="m_homePageTitle">
+      <div id="m_hamburger">
+        <input type="button" id="m_hamburgerShowButton" class="m_hamburgerButton" value="☰">
+      </div>
+      <div id="m_hamburgerMenu">
+        <div id="m_hamburgerClose">
+          <input type="button" id="m_hamburgerCloseButton" class="m_hamburgerCloseButton" value="✕">
+        </div>
+        <div style="border: 0.5px solid; border-color: #aaaaaa;"></div>
+        <input type="button" id="m_ChineseBookButton" class="m_category"
+          onclick="window.location.href='/search_results'" value="中文書籍">
+        <input type="button" id="m_ChineseBookButtonShow" class="m_categoryShow" value="﹀">
+        <div style="border: 0.5px solid; border-color: #aaaaaa;"></div>
+        <div id="m_ChineseBook" class="m_categoryBoard">
+          <p class="m_recommend">本月熱銷</p>
+          <table style="margin-top: -0.5rem; text-align: center;">
+            <tr>
+              <td style="width: 50%;">
+                <a href="../book_detail">
+                  <img src="../static/images/product_pic/getImage096.jpg" class="m_hamburgerImage">
+                </a>
+              </td>
+              <td style="width: 50%;">
+                <p class="m_recommendIntroduction">
+                  在世界的另一個角落，有著一個神秘的魔法國度，裡面住滿了巫師。施魔法、派貓頭鷹送信都只是基本，他們還騎飛天掃帚當交通工具，和畫像裡的人交談，與各式各樣的神奇生物比鄰而居，甚至還有完整培育巫師的學校。
+                </p>
+              </td>
+            </tr>
+            <tr>
+              <td style="width: 50%;">
+                <a href="../book_detail" class="m_recommendName">哈利波特(1)<br>神秘的魔法石</a>
+              </td>
+            </tr>
+          </table>
+
+          <p class="m_recommend">編輯推薦</p>
+
+          <table style="margin-top: -0.5rem; text-align: center;">
+            <tr>
+              <td style="width: 50%;">
+                <a href="../book_detail">
+                  <img src="../static/images/product_pic/getImage091.jpg" class="m_hamburgerImage">
+                </a>
+              </td>
+              <td style="width: 50%;">
+                <p class="m_recommendIntroduction">
+                  在Atlantis學院裡，<br>所有知識都不是知識，<br>只有肯定了自己，世界才會肯定你<br>度過地獄般的期末考後，漾漾迎來了高中的第一個寒假！<br>回到原世界，已經不是「正常人」的他，馬上被女鬼逼迫解決問題！？
+                </p>
+              </td>
+            </tr>
+            <tr>
+              <td style="width: 50%;">
+                <a href="../book_detail" class="m_recommendName">特殊傳說<br>新版vol.6 塵封的祕密</a>
+              </td>
+            </tr>
+          </table>
+
+          <p class="m_recommend">新品上架</p>
+
+          <table style="margin-top: -0.5rem; text-align: center;">
+            <tr>
+              <td style="width: 50%;">
+                <a href="../book_detail">
+                  <img src="../static/images/product_pic/getImage084.jpg" class="m_hamburgerImage">
+                </a>
+              </td>
+              <td style="width: 50%;">
+                <p class="m_recommendIntroduction">
+                  蛇魅盤繞雨林，鬼霧來去無影，吞噬擅闖者性命。沼澤中，極度危險的紅煙信號升起；山谷裡，詭異人語持續於耳邊呼喚，在在昭示了前路的險阻。<br>是何等恐怖的最終宿命，逼得西沙考古隊員消聲匿跡？
+                </p>
+              </td>
+            </tr>
+            <tr>
+              <td style="width: 50%;">
+                <a href="../book_detail" class="m_recommendName">盜墓筆記之9<br>蛇沼鬼城Ⅳ</a>
+              </td>
+            </tr>
+          </table>
+
+          <div style="border: 0.5px solid; border-color: #aaaaaa; margin-top: 1.5rem;"></div>
+
+        </div>
+
+        <input type="button" id="m_EnglishBookButton" class="m_category"
+          onclick="window.location.href='/search_results'" value="外文書籍">
+        <input type="button" id="m_EnglishBookButtonShow" class="m_categoryShow" value="﹀">
+
+        <div style="border: 0.5px solid; border-color: #aaaaaa;"></div>
+
+        <div id="m_EnglishBook" class="m_categoryBoard">
+
+          <p class="m_recommend">本月熱銷</p>
+
+          <table style="margin-top: -0.5rem; text-align: center;">
+            <tr>
+              <td style="width: 50%;">
+                <a href="../book_detail">
+                  <img src="../static/images/product_pic/getImage293.jpg" class="m_hamburgerImage">
+                </a>
+              </td>
+              <td style="width: 50%;">
+                <p class="m_recommendIntroduction">
+                  眾所皆知契約戀愛最終都會去掉契約，只剩戀愛。<br>不過身為科學家，不承認沒有驗證的假說。這對冤家親自實驗給你看！
+                </p>
+              </td>
+            </tr>
+            <tr>
+              <td style="width: 50%;">
+                <a href="../book_detail" class="m_recommendName">The Love Hypothesis</a>
+              </td>
+            </tr>
+          </table>
+
+          <p class="m_recommend">編輯推薦</p>
+
+          <table style="margin-top: -0.5rem; text-align: center;">
+            <tr>
+              <td style="width: 50%;">
+                <a href="../book_detail">
+                  <img src="../static/images/product_pic/getImage294.jpg" class="m_hamburgerImage">
+                </a>
+              </td>
+              <td style="width: 50%;">
+                <p class="m_recommendIntroduction">
+                  This is a good story for a preteen. The protagonist is on the spectrum but is accepted by her family
+                  and some others. Overall, she has a pretty good self-concept and she succeeds at the task she sets for
+                  herself.
+                </p>
+              </td>
+            </tr>
+            <tr>
+              <td style="width: 50%;">
+                <a href="../book_detail" class="m_recommendName">A Kind Of Spark</a>
+              </td>
+            </tr>
+          </table>
+
+          <p class="m_recommend">新品上架</p>
+
+          <table style="margin-top: -0.5rem; text-align: center;">
+            <tr>
+              <td style="width: 50%;">
+                <a href="../book_detail">
+                  <img src="../static/images/product_pic/getImage295.jpg" class="m_hamburgerImage">
+                </a>
+              </td>
+              <td style="width: 50%;">
+                <p class="m_recommendIntroduction">
+                  It's a beautiful and empowering novel that will inspire readers of all ages to embrace their true
+                  selves and celebrate the differences that make us all unique.
+                </p>
+              </td>
+            </tr>
+            <tr>
+              <td style="width: 50%;">
+                <a href="../book_detail" class="m_recommendName">Show Us Who You Are</a>
+              </td>
+            </tr>
+          </table>
+
+          <div style="border: 0.5px solid; border-color: #aaaaaa; margin-top: 1.5rem;"></div>
+
+        </div>
+
+        <input type="button" id="m_comicButton" class="m_category" onclick="window.location.href='/search_results'"
+          value="動漫電玩">
+        <input type="button" id="m_comicButtonShow" class="m_categoryShow" value="﹀">
+
+        <div style="border: 0.5px solid; border-color: #aaaaaa;"></div>
+
+        <div id="m_comic" class="m_categoryBoard">
+
+          <p class="m_recommend">本月熱銷</p>
+
+          <table style="margin-top: -0.5rem; text-align: center;">
+            <tr>
+              <td style="width: 50%;">
+                <a href="../book_detail">
+                  <img src="../static/images/product_pic/getImage290.jpg" class="m_hamburgerImage">
+                </a>
+              </td>
+              <td style="width: 50%;">
+                <p class="m_recommendIntroduction">
+                  在這本書當中，以他獨門的高級動畫講座課程為基礎，查理威廉斯歸納了不論從新手到專家、傳統手繪動畫者到電腦動畫高手，每個動畫家都需要瞭解的動畫基本法則。
+                </p>
+              </td>
+            </tr>
+            <tr>
+              <td style="width: 50%;">
+                <a href="../book_detail" class="m_recommendName">動漫基礎技法《增訂版》</a>
+              </td>
+            </tr>
+          </table>
+
+          <p class="m_recommend">編輯推薦</p>
+
+          <table style="margin-top: -0.5rem; text-align: center;">
+            <tr>
+              <td style="width: 50%;">
+                <a href="../book_detail">
+                  <img src="../static/images/product_pic/getImage291.jpg" class="m_hamburgerImage">
+                </a>
+              </td>
+              <td style="width: 50%;">
+                <p class="m_recommendIntroduction">
+                  細心傾聽學習者遇到的繪畫瓶頸，專為你所編寫的人物角色繪畫大全！<br>你正為了繪畫上的瓶頸而煩惱嗎？<br>是不是因為問題太過瑣碎，到處都找不到解答呢？<br>本書正是為了這樣的你而編寫的。
+                </p>
+              </td>
+            </tr>
+            <tr>
+              <td style="width: 50%;">
+                <a href="../book_detail" class="m_recommendName">韓國繪師的動漫角色速繪祕技</a>
+              </td>
+            </tr>
+          </table>
+
+          <p class="m_recommend">新品上架</p>
+
+          <table style="margin-top: -0.5rem; text-align: center;">
+            <tr>
+              <td style="width: 50%;">
+                <a href="../book_detail">
+                  <img src="../static/images/product_pic/getImage292.jpg" class="m_hamburgerImage">
+                </a>
+              </td>
+              <td style="width: 50%;">
+                <p class="m_recommendIntroduction">
+                  人體結構繪畫是遊戲動漫從業人員必備的技能，是創作的一把利器。 人體結構的準確描繪是創作人物的基礎，紮實地掌握人體結構繪畫，可以在設計遊戲動漫人物時遊刃有餘，畫出造型完美的人體。
+                </p>
+              </td>
+            </tr>
+            <tr>
+              <td style="width: 50%;">
+                <a href="../book_detail" class="m_recommendName">遊戲動漫人體結構造型手繪技法</a>
+              </td>
+            </tr>
+          </table>
+
+          <div style="border: 0.5px solid; border-color: #aaaaaa; margin-top: 1.5rem;"></div>
+
+        </div>
+
+        <input type="button" id="m_novelButton" class="m_category" onclick="window.location.href='/search_results'"
+          value="文學小說">
+        <input type="button" id="m_novelButtonShow" class="m_categoryShow" value="﹀">
+
+        <div style="border: 0.5px solid; border-color: #aaaaaa;"></div>
+
+        <div id="m_novel" class="m_categoryBoard">
+
+          <p class="m_recommend">本月熱銷</p>
+
+          <table style="margin-top: -0.5rem; text-align: center;">
+            <tr>
+              <td style="width: 50%;">
+                <a href="../book_detail">
+                  <img src="../static/images/product_pic/getImage287.jpg" class="m_hamburgerImage">
+                </a>
+              </td>
+              <td style="width: 50%;">
+                <p class="m_recommendIntroduction">
+                  日本「讀者最喜愛的一本書」票選第一名。<br>獨家收錄【《心》及漱石文學百年特輯】<br>首度公開漱石親自操刀設計的《心》初版裝幀、各類改編作品、漱石的文學散步地圖，與漱石文學的三角戀之謎。
+                </p>
+              </td>
+            </tr>
+            <tr>
+              <td style="width: 50%;">
+                <a href="../book_detail" class="m_recommendName">心：夏目漱石公認代表作</a>
+              </td>
+            </tr>
+          </table>
+
+          <p class="m_recommend">編輯推薦</p>
+
+          <table style="margin-top: -0.5rem; text-align: center;">
+            <tr>
+              <td style="width: 50%;">
+                <a href="../book_detail">
+                  <img src="../static/images/product_pic/getImage288.jpg" class="m_hamburgerImage">
+                </a>
+              </td>
+              <td style="width: 50%;">
+                <p class="m_recommendIntroduction">
+                  美國文學評論大師　湯瑪斯．佛斯特教授最新力作<br>各界名人　肆一、譚光磊、郝譽翔、許榮哲、王聰威、陳珊妮、張靜之好評推薦<br>小說愛讀者與未來新銳作家必備的「小說教戰手冊」！
+                </p>
+              </td>
+            </tr>
+            <tr>
+              <td style="width: 50%;">
+                <a href="../book_detail" class="m_recommendName">美國文學院最受歡迎的23堂小說課</a>
+              </td>
+            </tr>
+          </table>
+
+          <p class="m_recommend">新品上架</p>
+
+          <table style="margin-top: -0.5rem; text-align: center;">
+            <tr>
+              <td style="width: 50%;">
+                <a href="../book_detail">
+                  <img src="../static/images/product_pic/getImage289.jpg" class="m_hamburgerImage">
+                </a>
+              </td>
+              <td style="width: 50%;">
+                <p class="m_recommendIntroduction">
+                  槍響前，他必須找到拯救被告的方法。<br>一艘遠洋漁船，承載著一樁滅門命案的祕密；<br>為了找出真相、伸張正義，賭上的可能是整個國家的命運<br>★評審一致盛讚！「第二屆鏡文學百萬影視小說大獎」首獎作品，影視化確定！
+                </p>
+              </td>
+            </tr>
+            <tr>
+              <td style="width: 50%;">
+                <a href="../book_detail" class="m_recommendName">八尺門的辯護人</a>
+              </td>
+            </tr>
+          </table>
+
+          <div style="border: 0.5px solid; border-color: #aaaaaa; margin-top: 1.5rem;"></div>
+
+        </div>
+
+        <input type="button" id="m_childButton" class="m_category" onclick="window.location.href='/search_results'"
+          value="兒童親子">
+        <input type="button" id="m_childButtonShow" class="m_categoryShow" value="﹀">
+
+        <div style="border: 0.5px solid; border-color: #aaaaaa;"></div>
+
+        <div id="m_child" class="m_categoryBoard">
+
+          <p class="m_recommend">本月熱銷</p>
+
+          <table style="margin-top: -0.5rem; text-align: center;">
+            <tr>
+              <td style="width: 50%;">
+                <a href="../book_detail">
+                  <img src="../static/images/product_pic/getImage284.jpg" class="m_hamburgerImage">
+                </a>
+              </td>
+              <td style="width: 50%;">
+                <p class="m_recommendIntroduction">
+                  父母的知識、信念與堅持，就像陽光、空氣和水，<br>讓教養種子得以發芽茁壯！<br>教育疑惑雖無法在彈指間就讓人豁然開朗，<br>但只要大人不放棄學習，<br>沒有教不好的孩子！
+                </p>
+              </td>
+            </tr>
+            <tr>
+              <td style="width: 50%;">
+                <a href="../book_detail" class="m_recommendName">機智的育兒生活指導手冊</a>
+              </td>
+            </tr>
+          </table>
+
+          <p class="m_recommend">編輯推薦</p>
+
+          <table style="margin-top: -0.5rem; text-align: center;">
+            <tr>
+              <td style="width: 50%;">
+                <a href="../book_detail">
+                  <img src="../static/images/product_pic/getImage285.jpg" class="m_hamburgerImage">
+                </a>
+              </td>
+              <td style="width: 50%;">
+                <p class="m_recommendIntroduction">
+                  ★ 紐約時報暢銷榜第一名！<br>★ 亞馬遜網路書店暢銷榜「初等教育」以及「學齡兒童教養」類第一名！<br>★ 英語版已暢銷破百萬冊！<br>★ 各國輔導專家一致推薦，增進親子關係，天下父母必讀！
+                </p>
+              </td>
+            </tr>
+            <tr>
+              <td style="width: 50%;">
+                <a href="../book_detail" class="m_recommendName">兒童愛之語(修訂版)</a>
+              </td>
+            </tr>
+          </table>
+
+          <p class="m_recommend">新品上架</p>
+
+          <table style="margin-top: -0.5rem; text-align: center;">
+            <tr>
+              <td style="width: 50%;">
+                <a href="../book_detail">
+                  <img src="../static/images/product_pic/getImage286.jpg" class="m_hamburgerImage">
+                </a>
+              </td>
+              <td style="width: 50%;">
+                <p class="m_recommendIntroduction">
+                  給5~10歲孩子與爸媽的親子英語學習插畫書<br>破百萬冊超人氣作者<br>繼給小小孩的年度暢銷書<br>《每天5分鐘親子英文》之後<br>為學齡孩子帶來的全新力作
+                </p>
+              </td>
+            </tr>
+            <tr>
+              <td style="width: 50%;">
+                <a href="../book_detail" class="m_recommendName">每天10分鐘學齡兒童親子英文</a>
+              </td>
+            </tr>
+          </table>
+
+          <div style="border: 0.5px solid; border-color: #aaaaaa; margin-top: 1.5rem;"></div>
+
+        </div>
+
+        <input type="button" id="m_makeupButton" class="m_category" onclick="window.location.href='/search_results'"
+          value="美妝保健">
+        <input type="button" id="m_makeupButtonShow" class="m_categoryShow" value="﹀">
+
+        <div style="border: 0.5px solid; border-color: #aaaaaa;"></div>
+
+        <div id="m_makeup" class="m_categoryBoard">
+
+          <p class="m_recommend">本月熱銷</p>
+
+          <table style="margin-top: -0.5rem; text-align: center;">
+            <tr>
+              <td style="width: 50%;">
+                <a href="../book_detail">
+                  <img src="../static/images/product_pic/getImage281.jpg" class="m_hamburgerImage">
+                </a>
+              </td>
+              <td style="width: 50%;">
+                <p class="m_recommendIntroduction">
+                  日常生活中最重要的獲取資訊方法就是「看」。任何工具只要經年累月地使用，很容易就會產生某種程度的損傷，隨著年齡增長，白內障的狀況變得更容易發生，若本書能保護您的「視覺」，對我來說就是最開心的事了。
+                </p>
+              </td>
+            </tr>
+            <tr>
+              <td style="width: 50%;">
+                <a href="../book_detail" class="m_recommendName">護眼保健＆眼疾預防完全手冊</a>
+              </td>
+            </tr>
+          </table>
+
+          <p class="m_recommend">編輯推薦</p>
+
+          <table style="margin-top: -0.5rem; text-align: center;">
+            <tr>
+              <td style="width: 50%;">
+                <a href="../book_detail">
+                  <img src="../static/images/product_pic/getImage282.jpg" class="m_hamburgerImage">
+                </a>
+              </td>
+              <td style="width: 50%;">
+                <p class="m_recommendIntroduction">
+                  以一雙巧手及對時尚潮流的超高敏感度，替無數藝人明星打造完美形象。提倡如何讓「路人變美人」的美麗概念，始終是明川老師深受廣大女性青睞的關鍵，運用多年來的造型實戰經驗，找出最精準省力的方法，造福所有女人。
+                </p>
+              </td>
+            </tr>
+            <tr>
+              <td style="width: 50%;">
+                <a href="../book_detail" class="m_recommendName">一秒變美人</a>
+              </td>
+            </tr>
+          </table>
+
+          <p class="m_recommend">新品上架</p>
+
+          <table style="margin-top: -0.5rem; text-align: center;">
+            <tr>
+              <td style="width: 50%;">
+                <a href="../book_detail">
+                  <img src="../static/images/product_pic/getImage283.jpg" class="m_hamburgerImage">
+                </a>
+              </td>
+              <td style="width: 50%;">
+                <p class="m_recommendIntroduction">
+                  ★本書教你易懂該做的保健腸識。<br>★本書告訴你可以擁有好腸道的實用祕訣。<br>★食安風暴下，本書教你自保的用油知識。<br>★本書教你分辨真假食物，為自己調整飲食習慣。
+                </p>
+              </td>
+            </tr>
+            <tr>
+              <td style="width: 50%;">
+                <a href="../book_detail" class="m_recommendName">護好腸，健康從裡美到外！</a>
+              </td>
+            </tr>
+          </table>
+
+          <div style="border: 0.5px solid; border-color: #aaaaaa; margin-top: 1.5rem;"></div>
+
+        </div>
+
+        <input type="button" n id="m_magazineButton" class="m_category"
+          onclick="window.location.href='../search_results'" value="潮流雜誌">
+        <input type="button" id="m_magazineButtonShow" class="m_categoryShow" value="﹀">
+
+        <div style="border: 0.5px solid; border-color: #aaaaaa;"></div>
+
+        <div id="m_magazine" class="m_categoryBoard">
+
+          <p class="m_recommend">本月熱銷</p>
+
+          <table style="margin-top: -0.5rem; text-align: center;">
+            <tr>
+              <td style="width: 50%;">
+                <a href="../book_detail">
+                  <img src="../static/images/product_pic/getImage249.jpg" class="m_hamburgerImage">
+                </a>
+              </td>
+              <td style="width: 50%;">
+                <p class="m_recommendIntroduction">
+                  雜誌內容有趣且多樣化，除了國際大事之外，也富含生活、藝術、娛樂等專題報導。閱讀時代週能補足一般台灣新聞的不足，刊適合高階主管、專業人士，也適合學習英文、準備出國留學的學生。
+                </p>
+              </td>
+            </tr>
+            <tr>
+              <td style="width: 50%;">
+                <a href="../book_detail" class="m_recommendName">TIME 時代週刊<br>第10期</a>
+              </td>
+            </tr>
+          </table>
+
+          <p class="m_recommend">編輯推薦</p>
+
+          <table style="margin-top: -0.5rem; text-align: center;">
+            <tr>
+              <td style="width: 50%;">
+                <a href="../book_detail">
+                  <img src="../static/images/product_pic/getImage254.jpg" class="m_hamburgerImage">
+                </a>
+              </td>
+              <td style="width: 50%;">
+                <p class="m_recommendIntroduction">
+                  從現在開始抗老隨著年齡增長，皮膚也會逐漸老化，雖然老化是無法避免但可以透過保養來讓自己保持在最佳狀況，隨著時代改變，優秀的抗老產品以及技術也陸續登場，許多人更是從20代就開始抗老，為了要讓大家可以更了解如何抗老，本期特別要收錄抗老特集。
+                </p>
+              </td>
+            </tr>
+            <tr>
+              <td style="width: 50%;">
+                <a href="../book_detail" class="m_recommendName">MAQUIA<br>6月號</a>
+              </td>
+            </tr>
+          </table>
+
+          <p class="m_recommend">新品上架</p>
+
+          <table style="margin-top: -0.5rem; text-align: center;">
+            <tr>
+              <td style="width: 50%;">
+                <a href="../book_detail">
+                  <img src="../static/images/product_pic/getImage264.jpg" class="m_hamburgerImage">
+                </a>
+              </td>
+              <td style="width: 50%;">
+                <p class="m_recommendIntroduction">
+                  去年十一月OpenAI發布的生成式人工智慧ChatGPT，毋庸置疑已經成為現象級的科技突破。不僅短短兩個月就突破一億用戶數，更僅花了三個月，就迭代更新至GPT-4。它席捲全球的速度，甚至引發特斯拉創辦人馬斯克為首的科技要角，聯名要求停止訓練模型六個月，要整個發展踩煞車。
+                </p>
+              </td>
+            </tr>
+            <tr>
+              <td style="width: 50%;">
+                <a href="../book_detail" class="m_recommendName">天下雜誌<br>第770期 </a>
+              </td>
+            </tr>
+          </table>
+
+          <div style="border: 0.5px solid; border-color: #aaaaaa; margin-top: 1.5rem;"></div>
+
+        </div>
+
+        <input type="button" id="m_ChineseCDButton" class="m_category"
+          onclick="window.location.href='../search_results'" value="華語CD">
+        <input type="button" id="m_ChineseCDButtonShow" class="m_categoryShow" value="﹀">
+
+        <div style="border: 0.5px solid; border-color: #aaaaaa;"></div>
+
+        <div id="m_ChineseCD" class="m_categoryBoard">
+
+          <p class="m_recommend">本月熱銷</p>
+
+          <table style="margin-top: -0.5rem; text-align: center;">
+            <tr>
+              <td style="width: 50%;">
+                <a href="../book_detail">
+                  <img src="../static/images/product_pic/getImage030.jpg" class="m_hamburgerImage">
+                </a>
+              </td>
+              <td style="width: 50%;">
+                <p class="m_recommendIntroduction">
+                  他將音樂合作的寬度與廣度延伸到極致，不僅有樂器、音樂家、詞曲創作者，青峰用音樂創作為我們示範了一次何謂不設限的合作；這一切起飛於純粹美的意念邀約，最後降落於悠揚旋律的作品成果，構成了吳青峰第二張個人全創作專輯《馬拉美的星期二》。
+                </p>
+              </td>
+            </tr>
+            <tr>
+              <td style="width: 50%;">
+                <a href="../book_detail" class="m_recommendName">吳青峰<br>《馬拉美的星期二》</a>
+              </td>
+            </tr>
+          </table>
+
+          <p class="m_recommend">編輯推薦</p>
+
+          <table style="margin-top: -0.5rem; text-align: center;">
+            <tr>
+              <td style="width: 50%;">
+                <a href="../book_detail">
+                  <img src="../static/images/product_pic/getImage051.jpg" class="m_hamburgerImage">
+                </a>
+              </td>
+              <td style="width: 50%;">
+                <p class="m_recommendIntroduction">
+                  是廢物還是禮物<br>我都滿足<br>愛 終將被安置在某處<br>餵養共⽣<br>成了我們他們<br>現在給你
+                </p>
+              </td>
+            </tr>
+            <tr>
+              <td style="width: 50%;">
+                <a href="../book_detail" class="m_recommendName">徐佳瑩<br>《給》</a>
+              </td>
+            </tr>
+          </table>
+
+          <p class="m_recommend">新品上架</p>
+
+          <table style="margin-top: -0.5rem; text-align: center;">
+            <tr>
+              <td style="width: 50%;">
+                <a href="../book_detail">
+                  <img src="../static/images/product_pic/getImage048.jpg" class="m_hamburgerImage">
+                </a>
+              </td>
+              <td style="width: 50%;">
+                <p class="m_recommendIntroduction">
+                  說到愛<br>一百部電影也定義不了 一萬首情歌也解釋不完<br>但或許 一個溫暖的擁抱就可以<br>談情說愛第一人選 蔡健雅Tanya 2011年遨遊音樂世界真心力作<br>說到愛 限量經典黑膠版
+                </p>
+              </td>
+            </tr>
+            <tr>
+              <td style="width: 50%;">
+                <a href="../book_detail" class="m_recommendName">蔡健雅<br>《說到愛》</a>
+              </td>
+            </tr>
+          </table>
+
+          <div style="border: 0.5px solid; border-color: #aaaaaa; margin-top: 1.5rem;"></div>
+
+        </div>
+
+        <input type="button" id="m_EnglishCDButton" class="m_category"
+          onclick="window.location.href='../search_results'" value="外語CD">
+        <input type="button" id="m_EnglishCDButtonShow" class="m_categoryShow" value="﹀">
+
+        <div style="border: 0.5px solid; border-color: #aaaaaa;"></div>
+
+        <div id="m_EnglishCD" class="m_categoryBoard">
+
+          <p class="m_recommend">本月熱銷</p>
+
+          <table style="margin-top: -0.5rem; text-align: center;">
+            <tr>
+              <td style="width: 50%;">
+                <a href="../book_detail">
+                  <img src="../static/images/product_pic/getImage071.jpg" class="m_hamburgerImage">
+                </a>
+              </td>
+              <td style="width: 50%;">
+                <p class="m_recommendIntroduction">
+                  專輯銷售數字突破1300萬張門檻，70座獎項加冕的國民小公主Taylor
+                </p>
+              </td>
+            </tr>
+            <tr>
+              <td style="width: 50%;">
+                <a href="../book_detail" class="m_recommendName">Speak Now
+                </a>
+              </td>
+            </tr>
+          </table>
+
+          <p class="m_recommend">編輯推薦</p>
+
+          <table style="margin-top: -0.5rem; text-align: center;">
+            <tr>
+              <td style="width: 50%;">
+                <a href="../book_detail">
+                  <img src="../static/images/product_pic/getImage070.jpg" class="m_hamburgerImage">
+                </a>
+              </td>
+              <td style="width: 50%;">
+                <p class="m_recommendIntroduction">
+                  締造全球2200萬張專輯與5000萬張數位下載單曲的傲人銷售，躋身全球前五名最暢銷數位音樂下載藝人行列，泰勒絲出道短短6年，不斷創造難以超越的排行奇蹟。
+                </p>
+              </td>
+            </tr>
+            <tr>
+              <td style="width: 50%;">
+                <a href="../book_detail" class="m_recommendName">RED<br>[Deluxe Edition]</a>
+              </td>
+            </tr>
+          </table>
+
+          <p class="m_recommend">新品上架</p>
+
+          <table style="margin-top: -0.5rem; text-align: center;">
+            <tr>
+              <td style="width: 50%;">
+                <a href="../book_detail">
+                  <img src="../static/images/product_pic/getImage045.jpg" class="m_hamburgerImage">
+                </a>
+              </td>
+              <td style="width: 50%;">
+                <p class="m_recommendIntroduction">
+                  夏川里美睽違3年全新專輯，特別選用了「かなさんどぉ」這個代表「愛你」意思的沖繩方言，作為專輯名稱。今年適逢沖繩回歸50周年，夏川也特別以「沖繩」作為主題，集結了多首充滿對故鄉、親人，以及重要的人滿滿愛意的作品。
+                </p>
+              </td>
+            </tr>
+            <tr>
+              <td style="width: 50%;">
+                <a href="../book_detail" class="m_recommendName">夏川里美《想你〜真的好愛你〜》</a>
+              </td>
+            </tr>
+          </table>
+
+          <div style="border: 0.5px solid; border-color: #aaaaaa;"></div>
+
+        </div>
+
+      </div>
+
+      <div id="m_ANOTHERPRICE">
+
+        <a href="../">
+          <img class="m_homeLinkImage" src="../static/images/logo.png" alt="標題">
+        </a>
+
+      </div>
+
+      <div id="m_search">
+
+        <p>
+
+          <span>
+            <input type="text" class="m_searchInputText" id="m_searchInputText">
+          </span>
+
+          <span>
+            <input type="submit" value="搜尋" class="m_searchInputSubmit"
+              onclick="window.location.href='../search_results'">
+          </span>
+
+        </p>
+
+      </div>
+
+      <div id="m_memberLogin">
+
+        <a href="../member_login">
+          <img class="m_member" src="../static/images/m_Member.png" alt="會員">
+        </a>
+
+      </div>
+
+      <div id="m_shoppingCart">
+
+        <a href="../shopping_cart">
+          <img class="m_cart" src="../static/images/m_Cart.png" alt="會員">
+        </a>
+
+      </div>
+
+    </div>
+
+    <div></div>
+
+    <div id="m_carousel">
+
+      <div id="m_HomeCarousel" class="carousel slide" data-bs-ride="carousel">
+
+        <div class="carousel-indicators">
+          <button type="button" data-bs-target="#HomeCarousel" data-bs-slide-to="0" class="active"></button>
+          <button type="button" data-bs-target="#HomeCarousel" data-bs-slide-to="1"></button>
+          <button type="button" data-bs-target="#HomeCarousel" data-bs-slide-to="2"></button>
+        </div>
+
+        <div class="carousel-inner">
+
+          <div class="carousel-item active" data-bs-interval="3000">
+            <img src="../static/images/Carousel_Advertise_1.jpg" alt="放入註解" class="d-block"
+              style="width: 100%; height: auto;">
+            <div class="carousel-caption"></div>
+          </div>
+
+          <div class="carousel-item" data-bs-interval="3000">
+            <img src="../static/images/Carousel_Advertise_2.jpg" alt="放入註解" class="d-block"
+              style="width: 100%; height: auto;">
+            <div class="carousel-caption"></div>
+          </div>
+
+          <div class="carousel-item" data-bs-interval="3000">
+            <img src="../static/images/Carousel_Advertise_3.jpg" alt="放入註解" class="d-block"
+              style="width: 100%; height: auto;">
+            <div class="carousel-caption"></div>
+          </div>
+
+        </div>
+
+        <button class="carousel-control-prev" type="button" data-bs-target="#HomeCarousel" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon"></span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#HomeCarousel" data-bs-slide="next">
+          <span class="carousel-control-next-icon"></span>
+        </button>
+
+      </div>
+
+    </div>
+
+    <div id="m_content">
+
+      <p class="m_content">焦點新書</p>
+
+      <table class="m_recommend">
+
+        <tr>
+          <td class="m_recommendDetails">
+            <a href="../book_detail">
+              <img class="m_recommendImage" src="../static/images/product_pic/getImage289.jpg" alt="推薦書籍">
+            </a>
+          </td>
+          <td class="m_recommendDetails">
+            <a href="../book_detail">
+              <img class="m_recommendImage" src="../static/images/product_pic/getImage293.jpg" alt="推薦書籍">
+            </a>
+          </td>
+        </tr>
+
+        <tr>
+          <td>
+            <a href="../book_detail" class="m_recommendName">八尺門的辯護人</a>
+          </td>
+          <td>
+            <a href="../book_detail" class="m_recommendName">The Love Hypothesis</a>
+          </td>
+        </tr>
+
+      </table>
+
+      <table class="m_recommend">
+
+        <tr>
+          <td class="m_recommendDetails">
+            <a href="../book_detail">
+              <img class="m_recommendImage" src="../static/images/product_pic/getImage299.jpg" alt="推薦書籍">
+            </a>
+          </td>
+          <td class="m_recommendDetails">
+            <a href="../book_detail">
+              <img class="m_recommendImage" src="../static/images/product_pic/getImage288.jpg" alt="推薦書籍">
+            </a>
+          </td>
+        </tr>
+
+        <tr>
+          <td>
+            <a href="../book_detail" class="m_recommendName">成為引領前進的力量</a>
+          </td>
+          <td>
+            <a href="../book_detail" class="m_recommendName">美國文學院最受歡迎的23堂小說課</a>
+          </td>
+        </tr>
+
+      </table>
+
+      <p class="m_content">每日推薦</p>
+
+      <table class="m_recommend">
+
+        <tr>
+          <td class="m_recommendDetails">
+            <a href="../book_detail">
+              <img class="m_recommendImage" src="../static/images/product_pic/getImage025.jpg" alt="推薦書籍">
+            </a>
+          </td>
+          <td class="m_recommendDetails">
+            <a href="../book_detail">
+              <img class="m_recommendImage" src="../static/images/product_pic/getImage296.jpg" alt="推薦書籍">
+            </a>
+          </td>
+        </tr>
+
+        <tr>
+          <td>
+            <a href="../book_detail" class="m_recommendName">神奇柑仔店12：神祕人與駱駝輕鬆符</a>
+          </td>
+          <td>
+            <a href="../book_detail" class="m_recommendName">成為孩子生命中的貴人：四季藝術創辦人唐富美的教育創新</a>
+          </td>
+        </tr>
+
+      </table>
+
+      <table class="m_recommend">
+
+        <tr>
+          <td class="m_recommendDetails">
+            <a href="../book_detail">
+              <img class="m_recommendImage" src="../static/images/product_pic/getImage030.jpg" alt="推薦書籍">
+            </a>
+          </td>
+          <td class="m_recommendDetails">
+            <a href="../book_detail">
+              <img class="m_recommendImage" src="../static/images/product_pic/getImage249.jpg" alt="推薦書籍">
+            </a>
+          </td>
+        </tr>
+
+        <tr>
+          <td>
+            <a href="../book_detail" class="m_recommendName">吳青峰 / 《馬拉美的星期二》 2LPs黑膠預購版</a>
+          </td>
+          <td>
+            <a href="../book_detail" class="m_recommendName">TIME 時代週刊 第10期</a>
+          </td>
+        </tr>
+
+      </table>
+
+      <p class="m_content">現時折扣</p>
+
+      <table class="m_recommend">
+
+        <tr>
+          <td class="m_recommendDetails">
+            <a href="../book_detail">
+              <img class="m_recommendImage" src="../static/images/product_pic/getImage064.jpg" alt="推薦書籍">
+            </a>
+          </td>
+          <td class="m_recommendDetails">
+            <a href="../book_detail">
+              <img class="m_recommendImage" src="../static/images/product_pic/getImage114.jpg" alt="推薦書籍">
+            </a>
+          </td>
+        </tr>
+
+        <tr>
+          <td>
+            <a href="../book_detail" class="m_recommendName">《REAL LIFE》平裝版</a>
+          </td>
+          <td>
+            <a href="../book_detail" class="m_recommendName">The Return of the King</a>
+          </td>
+        </tr>
+
+      </table>
+
+      <table class="m_recommend">
+
+        <tr>
+          <td class="m_recommendDetails">
+            <a href="../book_detail">
+              <img class="m_recommendImage" src="../static/images/product_pic/getImage227.jpg" alt="推薦書籍">
+            </a>
+          </td>
+          <td class="m_recommendDetails">
+            <a href="../book_detail">
+              <img class="m_recommendImage" src="../static/images/product_pic/getImage137.jpg" alt="推薦書籍">
+            </a>
+          </td>
+        </tr>
+
+        <tr>
+          <td>
+            <a href="../book_detail" class="m_recommendName">劉博仁不藏私的健腦祕密</a>
+          </td>
+          <td>
+            <a href="../book_detail" class="m_recommendName">咒術迴戰 18</a>
+          </td>
+        </tr>
+
+      </table>
+
+    </div>
+
+  </div>
+
+</body>
+
+</html>

@@ -1,0 +1,679 @@
+@import url(https://fonts.googleapis.com/css?family=Noto+Serif+TC&amp);
+
+/*網頁字形*/
+html {
+    font-size: 16px;
+}
+
+/*頂部廣告圖片*/
+img.topAdvertiseImage {
+    max-width: 100%;
+    height: auto;
+    object-fit: cover;
+}
+
+/*標題圖示*/
+img.homeLinkImage {
+    max-width: 14em;
+    height: auto;
+}
+
+input.searchInputText {
+    width: 27.5em;
+    height: 2.05em;
+    border: 0;
+    border-top-left-radius: 8px;
+    border-bottom-left-radius: 8px;
+    outline: 0;
+    margin-left: 0.03em;
+    margin-top: 0.03em;
+    font-size: 1em;
+    font-family: "Noto Serif TC", "serif";
+    color: #122d3e;
+}
+
+input.searchInputSubmit {
+    width: 2.6em;
+    height: 2em;
+    border: 0;
+    text-align: center;
+    font-size: 1em;
+    font-family: "Noto Serif TC", "serif";
+    color: #ffffff;
+    background-color: #3d708f;
+}
+
+p.headLine {
+    line-height: 0.1em;
+    margin-left: 1em;
+    font-size: 0.8em;
+    font-family: "Noto Serif TC", "serif";
+    color: #123e5a;
+}
+
+img.searchAadvertise {
+    max-width: 100%;
+    height: auto;
+    object-fit: cover;
+}
+
+p.memberSelect {
+    margin-top: 0.4rem;
+    font-size: 1em;
+    font-family: "Noto Serif TC", "serif";
+    color: #3d708f;
+}
+
+a.member {
+    text-decoration: none;
+    color: #3d708f;
+}
+
+a.member:hover {
+    color: #122d3e;
+}
+
+p.memberCenter {
+    margin-top: -0.4em;
+    font-size: 1em;
+    text-align: center;
+    font-family: "Noto Serif TC", "serif";
+    color: #3d708f;
+}
+
+p.cart {
+    font-size: 1em;
+    cursor: pointer;
+}
+
+a.cartImage img {
+    width: 2em;
+}
+
+a.cartWord {
+    text-decoration: none;
+    vertical-align: middle;
+    font-family: "Noto Serif TC", "serif";
+    color: #3d708f;
+}
+
+a.cartWord:hover {
+    color: #122d3e;
+}
+
+table.cartDetailItem {
+    font-size: 1em;
+    font-family: "Noto Serif TC", "serif";
+    color: #122d3e;
+}
+
+table.cartDetailItem tr {
+    height: 2rem;
+}
+
+table.cartDetailItem td {
+    border-bottom: 1px solid;
+    border-color: #777777;
+}
+
+button.backToTopStyle {
+    width: 1.8em;
+    height: 1.8em;
+    border: 0;
+    border-radius: 5px;
+    font-size: 1.5em;
+    line-height: 1.8em;
+    text-align: center;
+    font-weight: bolder;
+    color: #ffffff;
+    background: #3d708f;
+}
+
+button.category {
+    width: 7.5rem;
+    height: 2.5rem;
+    vertical-align: auto;
+    border: none;
+    background: none;
+    text-align: center;
+    font-size: 1em;
+    font-family: "Noto Serif TC", "serif";
+    color: #ffffff;
+}
+
+div.categoryBoard {
+    width: 67.5rem;
+    height: 20rem;
+    margin-top: 2.5rem;
+    box-shadow: 0 3px 5px rgba(0, 0, 0, 0.2);
+    display: none;
+    position: absolute;
+    z-index: 998;
+    background: #ffffff;
+}
+
+table.categoryItem {
+    width: 63rem;
+    margin: 0 auto;
+    margin-top: 1rem;
+}
+
+th.categoryItem {
+    width: 10.5rem;
+    font-weight: normal;
+    text-align: left;
+    font-size: 1.2em;
+    font-family: "Noto Serif TC", "serif";
+    color: #3d708f;
+}
+
+img.searchImage {
+    width: 10rem;
+    height: 13rem;
+    object-fit: cover;
+}
+
+p.searchIntroduction {
+    width: 9.5rem;
+    height: 12rem;
+    vertical-align: top;
+    font-size: 0.8em;
+    font-family: "Noto Serif TC", "serif";
+    color: #999999;
+}
+
+p.recommendName {
+    height: 1.5rem;
+    text-align: center;
+    font-size: 1em;
+    font-family: "Noto Serif TC", "serif";
+    color: #999999;
+}
+
+img.recommendImage {
+    width: 10rem;
+    height: 13rem;
+    object-fit: cover;
+}
+
+p.recommendIntroduction {
+    width: 9.5rem;
+    height: 12rem;
+    vertical-align: top;
+    font-size: 0.8em;
+    font-family: "Noto Serif TC", "serif";
+    color: #999999;
+}
+
+img.detailImage {
+    width: 25rem;
+    height: 32.5rem;
+    object-fit: cover;
+}
+
+h1.bookTitle {
+    padding-left: 1rem;
+    padding-right: 1rem;
+    line-height: 1.6em;
+    font-size: 1.3em;
+    font-family: "Noto Serif TC", "serif";
+    color: #555555;
+}
+
+p.bookInformation {
+    margin-top: 1rem;
+    padding-left: 1.3rem;
+    line-height: 0.8em;
+    font-size: 0.9em;
+    font-family: "Noto Serif TC", "serif";
+    color: #555555;
+}
+
+p.bookPrice {
+    margin-top: 2rem;
+    padding-left: 1.3rem;
+}
+
+span.bookPriceTitle {
+    line-height: 0.8em;
+    font-size: 1.1em;
+    font-family: "Noto Serif TC", "serif";
+    color: #555555;
+}
+
+span.bookPrice {
+    line-height: 0.8em;
+    font-size: 1.2em;
+    font-family: "Noto Serif TC", "serif";
+    color: #990000;
+}
+
+p.noInventory {
+    padding-left: 1.3rem;
+    font-size: 1em;
+    font-family: "Noto Serif TC", "serif";
+    color: #000000;
+}
+
+input.bookCheckout {
+    width: 10rem;
+    height: 2rem;
+    line-height: 0.8rem;
+    border: 1px solid;
+    border-color: #3d708f;
+    background: #ffffff;
+    font-size: 1em;
+    font-family: "Noto Serif TC", "serif";
+    color: #3d708f;
+}
+
+input.bookCheckout:hover {
+    background: #3d708f;
+    color: #ffffff;
+}
+
+input.bookAddCart {
+    width: 10rem;
+    height: 2rem;
+    line-height: 0.8rem;
+    border: 1px solid;
+    border-color: #3d708f;
+    background: #3d708f;
+    font-size: 1em;
+    font-family: "Noto Serif TC", "serif";
+    color: #ffffff;
+}
+
+input.bookAddCart:hover {
+    background: #122d3e;
+}
+
+p.introductionDetail {
+    margin-left: 3rem;
+    margin-right: 5rem;
+    line-height: 1.6em;
+    font-size: 1em;
+    font-family: "Noto Serif TC", "serif";
+    color: #555555;
+}
+
+p.content {
+    padding-top: 2rem;
+    margin-left: 2.5rem;
+    font-size: 1.5em;
+    font-family: "Noto Serif TC", "serif";
+    color: #3d708f;
+
+}
+
+input.writeEvaluateButton {
+    width: 70rem;
+    height: 10rem;
+    border: none;
+    background: none;
+    font-family: "Noto Serif TC", "serif";
+    color: #777777;
+}
+
+textarea.writeEvaluate {
+    width: 68.4rem;
+    height: 6rem;
+    margin-top: 0.7rem;
+    margin-left: 0.8rem;
+    margin-right: 0.8rem;
+    outline: none;
+    border-radius: none;
+    border: 0.5px solid;
+    border-color: #aaaaaa;
+}
+
+input.postEvaluateButton {
+    width: 5rem;
+    float: right;
+    margin-top: 0.7rem;
+    margin-right: 0.75rem;
+    border: none;
+    background: #3d708f;
+    font-family: "Noto Serif TC", "serif";
+    color: #ffffff;
+}
+
+input.postEvaluateButton:hover {
+    background: #123e5a;
+}
+
+table.search {
+    width: 75rem;
+    text-align: center;
+}
+
+td.searchDetails {
+    width: 15rem;
+}
+
+a.searchName {
+    height: 1.5rem;
+    text-decoration: none;
+    text-align: center;
+    font-size: 1em;
+    font-family: "Noto Serif TC", "serif";
+    color: #3d708f;
+}
+
+a.searchName:hover {
+    text-decoration: underline;
+}
+
+p.categoryName {
+    margin-top: 0.5rem;
+    margin-left: 2.5rem;
+    line-height: 0;
+    text-align: left;
+    font-size: 0.7em;
+    font-family: "Noto Serif TC", "serif";
+    color: #999999;
+}
+
+p.showPrice {
+    margin-left: 2.5rem;
+    line-height: 0.5em;
+    text-align: left;
+}
+
+span.priceTitle {
+    font-size: 0.9em;
+    font-family: "Noto Serif TC", "serif";
+    color: #000000;
+}
+
+span.price {
+    font-weight: bolder;
+    font-size: 1em;
+    font-family: "Noto Serif TC", "serif";
+    color: #990000;
+}
+
+input.addCart {
+    width: 10rem;
+    height: 1.5rem;
+    line-height: 0.8rem;
+    border: none;
+    background: #3d708f;
+    font-size: 1em;
+    font-family: "Noto Serif TC", "serif";
+    color: #ffffff;
+}
+
+input.addCart:hover {
+    background: #122d3e;
+}
+
+p.notAddCart {
+    padding-top: 0.5em;
+    height: 1.5rem;
+    font-size: 1em;
+    font-family: "Noto Serif TC", "serif";
+    color: #555555;
+    cursor: default;
+}
+
+table.about {
+    width: 68rem;
+    margin-top: 1.5rem;
+    text-align: center;
+}
+
+td.about {
+    width: 15rem;
+}
+
+p.aboutHead {
+    font-size: 1.1em;
+    line-height: 0.3em;
+    font-weight: bolder;
+    font-family: "Noto Serif TC", "serif";
+    color: #ffffff;
+}
+
+p.aboutBody {
+    line-height: 0.2em;
+    font-size: 1em;
+    font-family: "Noto Serif TC", "serif";
+    color: #bbbbbb;
+}
+
+a.aboutBody {
+    line-height: 0.2em;
+    text-decoration: none;
+    font-size: 1em;
+    font-family: "Noto Serif TC", "serif";
+    color: #bbbbbb;
+}
+
+a.aboutBody:hover {
+    color: #ffffff;
+}
+
+p.Information {
+    font-size: 0.8em;
+    line-height: 2px;
+    font-family: "Noto Serif TC", "serif";
+    color: #000000;
+}
+
+input.m_hamburgerButton {
+    width: 2rem;
+    height: 4rem;
+    border: none;
+    background: none;
+    text-align: left;
+    font-size: 1.5rem;
+    color: #ffffff;
+}
+
+input.m_hamburgerCloseButton {
+    width: 2rem;
+    height: 4rem;
+    border: none;
+    background: none;
+    text-align: left;
+    font-size: 1.5rem;
+    color: #3d708f;
+}
+
+img.m_homeLinkImage {
+    width: 4rem;
+    height: auto;
+    object-fit: cover;
+}
+
+input.m_searchInputText {
+    margin-top: 0.1rem;
+    margin-left: 0.1rem;
+    outline: none;
+    border: none;
+}
+
+input.m_searchInputSubmit {
+    width: 40px;
+    margin-top: 0.1rem;
+    border: none;
+    background: none;
+    font-family: "Noto Serif TC", "serif";
+}
+
+img.m_member {
+    width: 32px;
+    margin-top: 1rem;
+    margin-left: 5px;
+    object-fit: cover;
+}
+
+img.m_cart {
+    width: 40px;
+    margin-top: 0.6rem;
+    margin-left: -3px;
+    object-fit: cover;
+}
+
+p.m_content {
+    margin-top: 1rem;
+    margin-left: 1rem;
+    font-size: 1.3rem;
+    font-family: "Noto Serif TC", "serif";
+    color: #3d708f;
+}
+
+table.m_recommend {
+    width: 100%;
+    text-align: center;
+}
+
+td.m_recommendDetails {
+    width: 50%;
+}
+
+img.m_recommendImage {
+    width: 70%;
+    height: 100%;
+    object-fit: cover;
+}
+
+input.m_category {
+    width: 5rem;
+    height: 3rem;
+    outline: none;
+    border: none;
+    text-align: left;
+    font-family: "Noto Serif TC", "serif";
+    color: #3d708f;
+    background: none;
+}
+
+input.m_categoryShow {
+    width: 15rem;
+    height: 3rem;
+    outline: none;
+    border: none;
+    text-align: right;
+    font-family: "Noto Serif TC", "serif";
+    color: #3d708f;
+    background: none;
+}
+
+div.m_categoryBoard {
+    width: 100%;
+    background: #ffffff;
+    display: none;
+}
+
+img.m_hamburgerImage {
+    width: 7.5rem;
+    height: 10rem;
+    object-fit: cover;
+}
+
+p.m_recommend {
+    margin-top: 0.5rem;
+    margin-left: 1.5rem;
+    font-size: 1.2em;
+    font-family: "Noto Serif TC", "serif";
+    color: #3d708f;
+}
+
+p.m_recommendIntroduction {
+    margin-right: 1rem;
+    vertical-align: top;
+    text-align: left;
+    font-size: 0.8em;
+    font-family: "Noto Serif TC", "serif";
+    color: #999999;
+}
+
+img.m_detailImage {
+    width: 20rem;
+    height: 26rem;
+    object-fit: cover;
+}
+
+h1.m_bookTitle {
+    margin-top: 1rem;
+    margin-left: 2rem;
+    margin-right: 2rem;
+    font-size: 1.2em;
+    font-family: "Noto Serif TC", "serif";
+    color: #555555;
+}
+
+p.m_bookInformation {
+    margin-top: 1rem;
+    margin-left: 2rem;
+    margin-right: 2rem;
+    font-size: 0.8em;
+    font-family: "Noto Serif TC", "serif";
+    color: #555555;
+}
+
+p.m_bookPrice {
+    margin-left: 2rem;
+    margin-top: 2rem;
+    font-family: "Noto Serif TC", "serif";
+}
+
+span.m_bookPriceTitle {
+    font-size: 0.9em;
+    color: #555555;
+}
+
+span.m_bookPrice {
+    font-size: 1em;
+    color: #990000;
+}
+
+input.m_bookCheckout {
+    width: 7rem;
+    height: 2rem;
+    line-height: 0.8rem;
+    border: 1px solid;
+    border-color: #3d708f;
+    background: #ffffff;
+    font-size: 1em;
+    font-family: "Noto Serif TC", "serif";
+    color: #3d708f;
+}
+
+input.m_bookAddCart {
+    width: 7rem;
+    height: 2rem;
+    line-height: 0.8rem;
+    border: 1px solid;
+    border-color: #3d708f;
+    background: #3d708f;
+    font-size: 1em;
+    font-family: "Noto Serif TC", "serif";
+    color: #ffffff;
+}
+
+p.m_content {
+    font-size: 1.1em;
+    font-family: "Noto Serif TC", "serif";
+    color: #3d708f;
+}
+
+p.m_introductionDetail {
+    margin-left: 1rem;
+    margin-right: 1rem;
+    line-height: 1.6em;
+    font-size: 0.9em;
+    font-family: "Noto Serif TC", "serif";
+    color: #000000;
+}
+
+a.m_recommendName {
+    height: 1.5rem;
+    text-decoration: none;
+    text-align: center;
+    font-size: 1em;
+    font-family: "Noto Serif TC", "serif";
+    color: #999999;
+}

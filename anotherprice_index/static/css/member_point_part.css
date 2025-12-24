@@ -1,0 +1,98 @@
+@media screen and (max-width: 767px) {
+    #computer {
+        display: none;
+    }
+
+    #mobile {
+        min-width: 370px;
+        overflow-x: scroll;
+        display: block;
+    }
+}
+
+@media screen and (min-width: 768px) {
+    #computer {
+        min-width: 1250px;
+        overflow-x: scroll;
+        display: block;
+    }
+
+    #mobile {
+        display: none;
+    }
+}
+
+/*電腦頁面*/
+#computer {
+    width: 100%;
+}
+
+/*上方工具*/
+#pointTitle {
+    height: 5rem;
+    background: #ffffff;
+}
+
+/*這是另外的價錢*/
+#title {
+    width: 16rem;
+    height: 7.5rem;
+    padding-top: 2rem;
+    padding-left: 5rem;
+}
+
+#body {
+    width: 75rem;
+    height: 42rem;
+    margin: 0 auto;
+    background: #ffffff;
+}
+
+#pointBorder {
+    width: 62.5rem;
+    height: 30rem;
+    margin: 0 auto;
+    margin-top: 3rem;
+    border: 0.05em solid;
+    border-radius: 5px;
+    border-color: #122d3e;
+}
+
+#point {
+    margin: 0 auto;
+    width: 30rem;
+}
+
+#bottomInformation {
+    height: 18.5rem;
+    background: #122d3e;
+}
+
+#WebInformation {
+    height: 80px;
+    text-align: center;
+    background: #ffffff;
+}
+
+#m_title {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#m_pointBorder {
+    width: 80%;
+    height: 25rem;
+    margin: 0 auto;
+    margin-top: 2rem;
+    display: flex;
+    justify-content: center;
+    border: 0.05em solid;
+    border-radius: 5px;
+    border-color: #122d3e;
+}
+
+#m_point {
+    width: 90%;
+    margin: 0 auto;
+}
