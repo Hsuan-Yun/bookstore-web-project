@@ -4,6 +4,10 @@ Duration **2023-04 – 2023-06**
 
 An online bookstore web project with frontend pages and a Django-based backend.
 
+## Frontend Demo
+
+https://hsuan-yun.github.io/bookstore-web-frontend
+
 ## Pages
 
 ### Public Pages
